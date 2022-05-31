@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+* 
+body
+{
+    font-family: 'ubuntu', sans-serif;
+    background: rgb(70, 142, 236);
+    min-height: 100vh;
+}
+header
+{
+    color: white;
+    text-align: center;
+}
+section
+{ 
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.301);
+}
+input
+{
+    max-width: 150px;
+}
+footer
+{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}

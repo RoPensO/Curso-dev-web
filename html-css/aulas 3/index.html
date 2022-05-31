@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>teste em várias telas</p>
+
+    <picture><!--****SEMPRE****--><!--o source tem que ser crescente, do menor tamanho até chegar no tamanho original-->
+        <source media="(max-width: 750px)" srcset="/midias/imagens/img-p.png" type="image/png"><!--caso a tela tenha menos de "X TAMANHO" ele abre a imagem "pequena"-->
+        <source media="(max-width: 1050px)" srcset="/midias/imagens/img-m.png" type="image/png"><!--caso tenha menos de "X TAMANHO" ele abre a imagem "média"-->
+        <img src="/midias/imagens/img-g.png" alt="imagem flexível"><!--imagem base do site PC-->
+    </picture>
+
+    <h1>Reprodução de áudio</h1>
+    <p>Reprodução de audio dentro de site</p>
+    <audio preload="metadata" 'autoplay' controls loop>
+        <!--preload 'auto' só carrega o site assim que todo o audio for baixado,
+        'metadata' só baixa informações e espera o usuario clicar para começar a baixar,
+        'none' não faz nada até o usuário dar play(mais demorado dependendo do arquivo)-->
+        <!--'controls' mostra os controles de audio, 'loop' da loop no audio(óbvio)-->
+        <source src="midias/audios/musica.mp3" type="audio/mpeg">
+        <source src="midias/audios/musica.ogg" type="audio/ogg">
+        <source src="midias/audios/musica.wav" type="audio/wav">
+        <!--ele carrega em ordem, e os 3 tipos de arquivo de audio são os acima **colocar sempre o TYPE**-->
+    </audio>
+
+    <h1>Videos hospedados localmente</h1><!--consome banda do servidor e fica mais caro para o cliente dependendo do tanto de acessos que ele tem,
+    recomenda-se hospedagens externas como youtube, vimeo etc-->
+    <p>videos hospedados dentro do próprio servidor</p>
+    <video width="560" poster="midias/imagens/img-p.png" controls>
+        <!--'poster' é usado como a THUMB do vídeo-->
+        <!--assim como audio 'loop' e 'autoplay' funcionam também-->
+        <source src="midias/videos/video.mp4" type="video/mp4">
+        <source src="midias/videos/Video.m4v" type="video/mp4">
+        <source src="midias/videos/Video.webm" type="video/mp4">
+        <p>se o navegador não tem compatibilidade baixe o arquivo <a href="midias/videos/video.mp4">aqui</a></p>
+    </video>
+
+    <h1>incorporando videos do youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/2iaPuUFIyMo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+    <h1>incorporando videos do vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/425772649?h=606ccc60b1&color=ffffff&title=0&byline=0&portrait=0" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>

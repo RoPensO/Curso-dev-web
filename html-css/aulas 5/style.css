@@ -1,0 +1,13 @@
+h1 {
+    background-color: lightgray;
+    height: 300px;
+    width: 400px;
+    border-width: 10px;
+    border-style: dotted;
+    border-color: aqua;
+}
+a {
+    border-width: 10px;
+    border-style: groove;
+    border-color: blueviolet;
+}

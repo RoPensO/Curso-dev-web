@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Teste com imagens</title>
+</head>
+<body>
+    <h2><p>inserindo imagem</p></h2><br>
+    <style>
+        img {
+            height: 80px;
+        }
+    </style>
+    <img src="html5.png" alt="Logo HTML5"> <!-- apertando CTRL + ESPAÇO ele da a opação de selecionar os arquivos dentro das pastas para inserção-->
+    <img src="css3.png" alt="Logo CSS3"><br>
+
+    <p><h2>inserindo Emojis</h2></p>
+    &#x1F498; <!--inserção de EMOJIS (emojipedia.org) copiar apenas numero do código-->
+
+<h2>Comandos para ficar com marcação de código-fonte e pré-formatação</h2>
+<pre>
+    <code>
+    var teste = document.getElementById('teste')
+    if (teste / 2 == 0) {
+        par
+    } else {
+        ímpar
+    } <!--ele pega todos os espaços e toda a parte de identação do código-->
+    </code>
+</pre>
+
+<h2>Citações</h2>
+<p>Como diria o pai de um amigo: <q>O computador é apenas um burro muito rápido</q></p><!--tag <q> é usado para citações(ele põe aspas mas para manter a semântica as citações usar a tag)-->
+
+<blockquote cite="">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, dolor magni repudiandae ipsum nisi quis laboriosam aut odio commodi provident quaerat, omnis officiis voluptates, iusto voluptatem! Eveniet molestias natus quos?
+</blockquote><!--citação em bloco com deslocamento, sem aspas, usa-se o parametro CITE para referenciar algo para os mecanismos de busca(visualmente não muda nada)-->
+
+<h2>Abreviação</h2>
+<p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascade Style Sheet">CSS</abbr>.</p>
+<!--tag abbr é de abreviação, mostra um texto auxiliar no hover-->
+
+<h2>Texto invertido(apenas pelo foda-se)</h2>
+<p><bdo dir="rtl">serve pra escrever de tras pra frente ¯\_(ツ)_/¯</bdo></p>
+
+<h2>Listar ordenadas</h2>
+<ol type="1" start=""> <!--no type I's = algarismos romanos, A's = alfabetos, 1 = numerica -->
+    <!--personaliza o começo da lista-->
+    <li>acordar</li>
+    <li>teste</li>
+    <li>etc</li><!--tag de fechamento opcional-->
+</ol>
+
+<h2>Listas não ordenadas</h2>
+<ul type="circle"><!--disc(ponto(padrão caso sem type)), circle(ponto aberto), square(quadradinho)-->
+    <li>pão</li>
+    <li>leite</li>
+    <li>etc</li>
+</ul>
+
+<h2>linguagens favoritas</h2>
+<ol>
+    <li>antigas</li>
+    <ol type="a">
+        <li>clipper</li>
+        <li>fortaran</li>
+    </ol>
+    <li>novas</li>
+    <ol type="a" start="3"><!--mesmo que seja usado a sequencia alfabetica, parametro 'start' é sempre numerico-->
+        <li>javascript</li>
+        <li>css</li>
+        <li>python</li>
+    </ol>
+</ol>
+
+<h2>Jogos</h2>
+<ul>
+    <li>SNES</li>
+    <ul>
+        <li>castlevania</li>
+        <li>mario</li>
+        <ul>
+            <li>mario 3</li>
+            <li>super mario wolrd</li>
+        </ul>
+    </ul>
+    <li>psx</li>
+        <ul>
+            <li>final fantasy</li>
+            <ul>
+                <li>final fantasy 6</li>
+                <ul>
+                    <li>terra</li>
+                    <li>kefkas</li>
+                </ul>
+                <li>final fantasy 7</li>
+            </ul>
+            <li>chrono trigger</li>
+        </ul>
+</ul>
+
+
+<h2>lista de definições</h2>
+<dl>
+    <dt>HTML</dt>
+    <dd>linguagem de marcação para criação de conteúdo de um site.</dd>
+    <dt>CSS</dt>
+    <dd>linguagem de marcação para a criação de design de um site.</dd>
+    <dt>javascript</dt>
+    <dd>linguagem de programação para criação da interatividade de um site.</dd>
+</dl>
+
+</body>
+</html>

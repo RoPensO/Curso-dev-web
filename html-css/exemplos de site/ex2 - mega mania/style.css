@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body {
+    background: #e96900da;
+}
+.painel {
+    display: flex;
+    max-width: 1000px;
+    min-height: 600px;
+    background: linear-gradient(#be5600da, #883d00);
+    border-radius: 15px;
+    padding-top: 50px;
+    padding-left: 30px;
+}
+.painel .bolinhas {
+    display: flex;
+}

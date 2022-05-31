@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio em DOM</title>
+    <style>
+        body {
+            background-color: rgb(147, 147, 223);
+            font: white;
+            font: normal 13pt arial;
+            }
+
+    </style>
+</head>
+<body>
+    <h1>Iniciando Estudos de DOM.</h1>
+    <p>aqui vai o resultado</p>
+    <p>Esse é o estudo sobre <strong>DOM</strong> em JavaScript.</p>
+    <div class="modificador">Clique em Mim</div>
+    <script>
+        var d = document.querySelector('div.modificador')
+        d.style.background = 'black';
+        
+    </script>
+</body>
+</html>
