@@ -86,7 +86,7 @@ body {
     align-items: center;
     transform: scaleY(0);
     transform-origin: top;
-}
+}s
 .header .search-form input {
     height: 100%;
     width: 100%;
