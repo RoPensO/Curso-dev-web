@@ -103,3 +103,8 @@ body {
 .header .search-form label:hover {
     color: var(--main-color);
 }
+.header .cart-item-container {
+    position: absolute;
+    top: 100%;
+    right: 0;
+}
