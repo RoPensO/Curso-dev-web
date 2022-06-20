@@ -7,3 +7,10 @@ header {
     background-color: lightblue;
     text-align: center;
 }
+.sec-sobre, .sec-correts {
+    padding: 30px 0;
+    text-align: center;
+}
+.sec-serv {
+    background-color: lightblue;
+}
