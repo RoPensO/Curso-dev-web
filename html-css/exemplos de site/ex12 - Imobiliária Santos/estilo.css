@@ -2,15 +2,61 @@
     margin: 0;
     font-family: 'Tahoma';
 }
+.destaque-azul {
+    font-weight: bold;
+    color: #afddfb;
+}
+.destaque-amarelo {
+    font-weight: bold;
+    color: yellow;
+}
 header {
     padding: 30px 0;
-    background-color: lightblue;
+    background-color: #afddfb;
     text-align: center;
 }
-.sec-sobre, .sec-correts {
-    padding: 30px 0;
+nav {
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+nav a {
+    font-size: 18px;
+    color: #1d1d1d;
+    border-bottom: 2px solid #1d1d1d;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.banner {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding-top: 0;
     text-align: center;
+}
+h1 {
+    color: #1d1d1d;
+    margin-bottom: 5px;
+}
+h2 {
+    color: #1c81c0;
+}
+.sec-sobre {
+    text-align: center;
+}
+.sec-sobre img {
+    width: 450px;
+    margin: 20px;
 }
 .sec-serv {
-    background-color: lightblue;
+    background-color: #1c81c0;
+    color: white;
+    margin-top: 30px;
+    text-align: center;
+}
+.sec-serv h2 {
+    color: white;
+    text-align: center;
+}
+.sec-serv p {
+    width: 700px;
+    text-align: center;
 }
