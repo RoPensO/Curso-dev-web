@@ -22,9 +22,12 @@ nav {
 nav a {
     font-size: 18px;
     color: #1d1d1d;
-    border-bottom: 2px solid #1d1d1d;
     text-decoration: none;
     margin: 0 10px;
+}
+nav a:hover {
+    border-bottom: 2px solid #1d1d1d;
+    border-top: 2px solid #1d1d1d;
 }
 .banner {
     margin-top: 50px;
@@ -55,14 +58,15 @@ h2 {
 .sec-sobre img, .sec-correts img {
     width: 450px;
     margin: 20px;
+    border-radius: 12px;
 }
-.sec-serv {
+.sec-serv, .sec-cont {
     background-color: #1c81c0;
     color: white;
     margin-top: 30px;
     text-align: center;
 }
-.sec-serv h2 {
+.sec-serv h2, .sec-cont h2 {
     padding: 30px;
     font-size: 28px;
     line-height: 42px;
@@ -94,4 +98,34 @@ h2 {
     line-height: 42px;
     color: #1c81c0;
     text-align: center;
+}
+.sec-correts a {
+    text-decoration: none;
+    border-bottom: 2px solid #1c81c0;
+    color: #1c81c0;
+    font-weight: bold;
+}
+.sec-cont {
+    padding-bottom: 40px;
+}
+.sec-cont iframe {
+    border-radius: 8px;
+}
+.sec-cont p {
+    font-size: 14px;
+    background-color: #1d1d1d;
+    color: white;
+    width: 800px;
+    margin: 30px auto;
+    text-align: center;
+    padding: 5px;
+    border-radius: 12px;
+}
+.sec-cont a {
+    font-size: 12px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 18px;
+    text-decoration: none;
+    color: #1c81c0;
 }
