@@ -55,6 +55,8 @@ h2 {
     text-align: center;
 }
 .sec-serv h2 {
+    font-size: 28px;
+    line-height: 42px;
     color: white;
     text-align: center;
 }
@@ -64,6 +66,7 @@ h2 {
     margin: 0 auto;
 }
 .sec-serv ul {
-    width: 700px;
+    text-align: justify;
+    width: 100px;
     margin: 0 auto;
 }
