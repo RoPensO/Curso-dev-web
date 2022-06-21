@@ -41,6 +41,8 @@ h2 {
 }
 .sec-sobre {
     text-align: center;
+    width: 700px;
+    margin: 0 auto;
 }
 .sec-sobre img {
     width: 450px;
@@ -57,6 +59,11 @@ h2 {
     text-align: center;
 }
 .sec-serv p {
-    width: 700px;
     text-align: center;
+    width: 700px;
+    margin: 0 auto;
+}
+.sec-serv ul {
+    width: 700px;
+    margin: 0 auto;
 }
