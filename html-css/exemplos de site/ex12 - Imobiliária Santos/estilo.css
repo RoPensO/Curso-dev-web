@@ -44,7 +44,15 @@ h2 {
     width: 700px;
     margin: 0 auto;
 }
-.sec-sobre img {
+.sec-sobre p, .sec-correts p {
+    font-size: 15px;
+    padding-bottom: 30px;
+    text-align: justify;
+    line-height: 20px;
+    width: 700px;
+    margin: 0 auto;
+}
+.sec-sobre img, .sec-correts img {
     width: 450px;
     margin: 20px;
 }
@@ -55,18 +63,35 @@ h2 {
     text-align: center;
 }
 .sec-serv h2 {
+    padding: 30px;
     font-size: 28px;
     line-height: 42px;
     color: white;
     text-align: center;
 }
 .sec-serv p {
+    font-size: 22px;
+    padding-bottom: 30px;
     text-align: center;
+    line-height: 42px;
     width: 700px;
     margin: 0 auto;
 }
 .sec-serv ul {
-    text-align: justify;
+    font-size: 22px;
+    line-height: 30px;
+    text-align: left;
     width: 100px;
     margin: 0 auto;
+    padding-bottom: 30px;
+}
+.sec-correts {
+    text-align: center;
+}
+.sec-correts h2 {
+    padding: 30px;
+    font-size: 28px;
+    line-height: 42px;
+    color: #1c81c0;
+    text-align: center;
 }
