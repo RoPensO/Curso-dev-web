@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Fredoka', sans-serif;
+}
+.sec-topo {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    width: 700px;
+}
+.sec-banner {
+    min-height: 500px;
+    background-size: cover;
+    background-image: url(imagens/capa.jpg);
+}
+.sec-banner-txt {
+    width: 100%;
+    text-align: right;
+}
+.sec-sobre {
+    text-align: center;
+    margin: 20px auto;
+}
+.sec-sobre p {
+    margin: 30px auto;
+    width: 600px;
+    text-align: justify;
+}
+.images {
+    margin: auto 30px;
+}
+.sec-sobre img {
+    height: 200px;
+    margin: 10px;
+}
+.sec-sobre span {
+    border-left: 2px solid #000;
+    font-size: 18px;
+    padding: 5px;
+    margin: 30px;
+}
+.sec-separacao {
+    padding: 30px;
+    background-image: url(imagens/fundo.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.sec-separacao h2 {
+    text-align: center;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    width: 100px;
+    border-radius: 40px;
+    margin: auto;
+
+}
