@@ -3,7 +3,8 @@
     padding: 0;
 }
 .limita-largura {
-    width: 1024px;
+    max-width: 1024px;
+    min-width: 320px;
     margin: 0 auto;
 }
 .topo, .rodape {
