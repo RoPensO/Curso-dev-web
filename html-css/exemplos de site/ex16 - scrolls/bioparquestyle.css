@@ -22,10 +22,10 @@ body {
 .apresentacao {
     width: calc(100% - 70px);
     overflow-y: scroll;
-    height: 315px;
+    height: 226px;
 }
 .galeria {
-    width: calc(100px - 70px);
+    width: calc(100% - 70px);
 }
 .area {
     margin: 20px 35px;
