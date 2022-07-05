@@ -5,7 +5,7 @@
 html, body {
     height: 100%;
 }
-.topo {
+.topo, .rodape {
     width: 100%;
     padding: 20px 0;
     color: #fff;
@@ -33,4 +33,19 @@ html, body {
 }
 .img-capa {
     width: 100%;
+}
+.secao {
+    width: 1024px;
+    margin: 20px auto;
+}
+.galeria {
+    display: flex;
+    width: 1024px;
+    overflow-x: scroll;
+}
+.galeria img {
+    height: 320px;
+}
+.rodape {
+    text-align: center;
 }
