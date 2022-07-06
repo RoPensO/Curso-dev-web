@@ -39,13 +39,37 @@ html, body {
     width: 1024px;
     margin: 20px auto;
 }
+.secao h2 {
+    text-align: center;
+    margin: 30px 0;
+}
+.secao p {
+    width: 100%;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 12px 0;
+}
+.disponibilidade img {
+    width: 60%;
+    max-width: 1024px;
+}
+.secao a {
+    color: #4710c1;
+    font-weight: bold;
+    text-decoration: none;
+}
+.secao .destaque {
+    font-weight: bold;
+    text-decoration: underline;
+}
 .galeria {
     display: flex;
     width: 1024px;
     overflow-x: scroll;
 }
 .galeria img {
-    height: 320px;
+    height: 200px;
+    margin: 10px 5px;
 }
 .rodape {
     text-align: center;
