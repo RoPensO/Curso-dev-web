@@ -1,0 +1,60 @@
+:root {
+    --paw: #bf9e04ff;
+    --div: #eeeeeeff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.menu {
+    width: 100%;
+    height: 60px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+.menu .nav {
+    width: 1000px;
+    margin: auto;
+    display: flex;
+    position: relative;
+}
+.menu .nav ul {
+    list-style: none;
+    padding: 15px;
+    position: absolute;
+    right: 0;
+}
+.menu .nav ul li {
+    display: inline;
+}
+.menu .nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.menu .nav h3 {
+    color: #fff;
+    font-size: 25px;
+    font-family: sans-serif;
+}
+.logopata {
+    height: 30px;
+    padding: 5px;
+}
+
+.banner {
+    display: flex;
+    width: 1000px;
+    margin: auto;
+    background: aqua;
+}
+.banner .banesq {
+    width: 50%;
+    background-color: red;
+}
