@@ -163,6 +163,33 @@ nav {
     margin: auto;
     display: flex;
 }
+.descricao2 .desctext {
+    width: 500px;
+    position: relative;
+    left: 50px;
+}
 .descricao2 img {
     width: 250px;
+    position: relative;
+    right: -100px;
+}
+.descricao2 .desctext a {
+    position: relative;
+    top: 30px;
+    text-decoration: none;
+    padding: 10px;
+    border: 2px solid #bf9e04ff;
+    color: #bf9e04ff;
+    border-radius: 15px;
+}
+
+
+footer {
+    background-color: black;
+}
+.final {
+    width: 1000px;
+    margin: auto;
+    background-color: aqua;
+    display: flex;
 }
