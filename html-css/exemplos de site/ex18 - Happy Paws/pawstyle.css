@@ -9,6 +9,7 @@
     font-family: sans-serif;
 }
 
+
 nav {
     background-color: black;
     height: 60px;
@@ -48,6 +49,7 @@ nav {
     margin-right: 10px;
 }
 
+
 .banner {
     width: 900px;
     margin: auto;
@@ -84,6 +86,7 @@ nav {
     top: 10px;
     right: -30%;
 }
+
 
 .produtos {
     width: 100%;
@@ -125,15 +128,37 @@ nav {
     bottom: 30px;
     color: white;
 }
+
+
 .descricao1 {
     width: 1000px;
     margin: auto;
     display: flex;
 }
 .descricao1 img {
-    height: 500px;
+    height: 350px;
+    position: relative;
+    left: 50px;
 }
-.descricao1 .desctext {
-    background-color: rgba(0, 255, 255, 0.192);
+.desctext {
+    width: 520px;
+    position: relative;
+    right: -100px;
+    text-align: justify;
+    margin-top: 50px;
+}
+.desctext h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.desctext p {
+    font-size: 15px;
+}
 
+
+.descricao2 {
+    width: 900px;
+    margin: auto;
+    display: flex;
 }
