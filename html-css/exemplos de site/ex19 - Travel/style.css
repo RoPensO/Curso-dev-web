@@ -56,15 +56,11 @@ header .perfil {
 
 
 main {
-    width: 1000px;
-    height: 100vh;
     margin: auto;
     display: flex;
-    position: relative;
 }
 .info {
     width: 100%;
-    position: absolute;
     top: 150px;
     background-color: aqua;
 }
@@ -82,4 +78,5 @@ main {
     border: 2px solid white;
     border-radius: 20px;
     background-color: transparent;
+    text-decoration: none;
 }
