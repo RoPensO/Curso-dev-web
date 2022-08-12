@@ -5,6 +5,94 @@ root {
 }
 
 * {
-    background-color: grey;
+    background-color: brown;
     font-family: 'Poppins';
+    color: #cccccc;
+}
+
+
+.lateral {
+    position: absolute;
+    bottom: 0px;
+    left: -10px;
+}
+.lateral .social li {
+    list-style: none;
+}
+.lateral .social li img {
+    height: 25px;
+    padding: 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin-left: 100px;
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    font-weight: 400;
+    position: relative;
+    left: -200px;
+}
+nav ul li {
+    margin-right: 80px;
+    text-decoration: none;
+    list-style: none;
+}
+nav ul li a {
+    text-decoration: none;
+}
+nav .logo {
+    height: 40px;
+}
+nav img {
+    height: 20px;
+    position: relative;
+    top: 5px;
+}
+nav span {
+    font-size: 20px;
+    margin: 0 20px;
+}
+
+
+main {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    position: relative;
+}
+main .esq {
+    width: 100%;
+    position: relative;
+    left: 30px;
+    top: 100px;
+}
+main .esq h1 {
+    font-size: 50px;
+    line-height: 60px;
+}
+main .esq h2 {
+    position: relative;
+    top: -30px;
+    font-size: 25px;
+    font-weight: 300;
+}
+main .esq a {
+    text-decoration: none;
+    padding: 10px 60px;
+    border: 2px solid white;
+    border-radius: 30px;
+    position: relative;
+    top: 50px;
+}
+main .dir img {
+    position: relative;
+    top: 80px;
+    right: 30px;
+    height: 400px;
 }
