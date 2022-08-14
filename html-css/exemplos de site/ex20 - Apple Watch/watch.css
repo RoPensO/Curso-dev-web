@@ -11,15 +11,24 @@ root {
 }
 
 
-.lateral {
+.menu-lateral {
     position: absolute;
     bottom: 0px;
     left: -10px;
+    background-color: #fff;
 }
-.lateral .social li {
+.menu-lateral .burguer {
+    position: absolute;
+    top: -500px;
+    left: 45px;
+}
+.menu-lateral img {
+    height: 30px;
+}
+.menu-lateral .social li {
     list-style: none;
 }
-.lateral .social li img {
+.menu-lateral .social li img {
     height: 25px;
     padding: 5px;
 }
@@ -53,6 +62,10 @@ nav img {
     height: 20px;
     position: relative;
     top: 5px;
+}
+nav .final {
+    position: relative;
+    bottom: -5px;
 }
 nav span {
     font-size: 20px;
