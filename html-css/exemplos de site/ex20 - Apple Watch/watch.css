@@ -13,13 +13,12 @@ root {
 
 .menu-lateral {
     height: 100%;
-    position: absolute;
     background-color: #fff;
 }
 .menu-lateral .burguer {
-    position: relative;
-    top: -470px;
-    left: 45px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
 }
 .menu-lateral img {
     height: 30px;
