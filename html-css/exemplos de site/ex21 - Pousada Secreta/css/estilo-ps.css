@@ -37,8 +37,16 @@ nav {
     text-decoration: none;
     color: gray;
     margin-left: 15px;
+    padding: 2px;
     text-transform: uppercase;
 }
 .menu a:hover {
     border-bottom: 2px solid grey;
+}
+
+.banner {
+    background-image: url('imagens/img-fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
 }
