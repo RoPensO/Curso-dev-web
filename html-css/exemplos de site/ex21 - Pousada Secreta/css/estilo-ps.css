@@ -51,6 +51,28 @@ nav {
     background-size: cover;
     height: 100vh;
 }
+.banner .desc_banner {
+    display: flex;
+    flex-direction: column;
+    background-color: #49997cb2;
+    border: 1px solid white;
+    width: 400px;
+    height: 150px;
+    position: relative;
+    margin: auto;
+    top: 35%;
+    text-align: center;
+    color: white;
+}
+.banner h1 {
+    font-size: 45px;
+    margin-bottom: -3px;
+}
+.banner p {
+    font-size: 22px;
+    font-weight: 600;
+    
+}
 
 .quartos, .rota, .sobre, .infos {
     width: 1024px;
