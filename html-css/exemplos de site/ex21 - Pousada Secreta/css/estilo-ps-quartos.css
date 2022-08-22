@@ -1,0 +1,36 @@
+.topo {
+    background-image: url('../imagens/img-fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+
+.galeria-quartos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.galeria {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-bottom: 30px;
+}
+.galeria img {
+    height: 200px;
+    cursor: pointer;
+}
+.info-quarto h2 {
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+.info-quarto ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 50px;
+}
+.espaco {
+    color: white;
+}
