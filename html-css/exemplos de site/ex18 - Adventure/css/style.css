@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    --principal: #242A3A;
+}
+
+* {
+    margin: 0;
+    font-family: roboto;
+}
+
+header {
+    background-image: url(../imagens/banner.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: white;
+}
+.menu {
+    width: 1024px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    position: relative;
+    top: 20px;
+}
+.menu img {
+    height: 40px;
+    cursor: pointer;
+}
+.menu ul {
+    display: flex;
+    list-style: none;
+    position: relative;
+    top: 15px;
+    left: -180px;
+}
+.menu ul li {
+    margin-right: 45px;
+    cursor: pointer;
+}
+.pesquisa img {
+    position: relative;
+    top: 5px;
+    width: 25px;
+}
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 600px;
+    height: 400px;
+    position: relative;
+    top: 15vh;
+}
+.banner p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.banner h1 {
+    font-size: 70px;
+    font-family: 'Aboreto', cursive;
+}
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: -40px;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 500px;
+    height: 250px;
+    cursor: pointer;
+}
+.banner .eco {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(60%);
+}
+.eco img {
+    position: relative;
+    left: 5px;
+}
+.segmenu {
+    display: flex;
+    justify-content: space-around;
+    width: 1024px;
+    height: 80px;
+    margin: auto;
+    background-color: white;
+    position: relative;
+    top: 210px;
+}
+.item {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    color: black;
+    margin: 5px;
+}
+.item p {
+    margin-left: 20px;
+    font-weight: 500;
+    color: var(--principal);
+}
+.mais {
+    font-size: 35px;
+    position: relative;
+    left: 50px;
+    color: var(--principal);
+}
+.segmenu .maispesquisa {
+    background: var(--principal);
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 28px;
+}
+.segmenu .maispesquisa p {
+    margin: 0;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.caracteristicas {
+    display: flex;
+    margin: auto;
+    margin-top: 200px;
+    width: 1024px;
+}
+.infos {
+    display: flex;
+    flex-direction: column;
+}
+.infos h4 {
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.infos .titulo {
+    font-size: 40px;
+    font-family: 'Aboreto', cursive;
+    margin: 150px 0;
+}
+.infos .textos {
+    width: 350px;
+    position: relative;
+    left: 50px;
+}
+.infos .textos h3 {
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+.infos .textos p {
+    width: 300px;
+    font-size: 15px;
+    line-height: 30px;
+}
+.galeria {
+    width: 50%;
+    position: relative;
+    right: -120px;
+}
+.galeria img {
+    height: 80%;
+}
+.galeria .navigation {
+    display: flex;
+}
+.galeria .navigation img {
+    padding: 10px;
+    width: 60px;
+    cursor: pointer;
+}
+
+.registro {
+    display: flex;
+    width: 1024px;
+    height: 600px;
+    margin: auto;
+    position: relative;
+}
+.registro img {
+    height: 70%;
+}
+.infos {
+
+}
+.registro .infos {
+    width: 600px;
+    margin: auto;
+}
+.registro .infos h2 {
+    position: relative;
+    top: -220px;
+    margin: auto;
+}
+.registro .infos h3 {
+    
+}
+.registro .infos p {
+
+}
+span {
+    width: 100px;
+    text-align: center;
+    padding: 20px 10px;
+    border: 1px solid #242a3a34;
+    position: relative;
+    top: 15px;
+}
