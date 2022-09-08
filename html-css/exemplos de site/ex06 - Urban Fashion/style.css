@@ -69,6 +69,7 @@ nav ul li a {
 .arrow-icons {
     margin-top: 40px;
     display: flex;
+    cursor: pointer;
 }
 .arrow-icons img {
     width: 40px;
