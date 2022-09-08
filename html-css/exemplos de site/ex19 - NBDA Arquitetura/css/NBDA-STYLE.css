@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto';
+}
+.menu {
+    width: 1200px;
+    height: 60px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 300;
+}
+.logo {
+    display: flex;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.logo span {
+    font-weight: 800;
+    padding: 0 5px 0 0;
+}
+nav {
+    display: flex;
+}
+div a {
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 13px;
+    color: white;
+}
+.contato {
+    padding: 10px 30px;
+    border: 1px solid white;
+}
+.topo {
+    background-image: url(../imagens/header.jpg);
+    background-size: cover;
+    background-position-y: -260px;
+    height: 100vh;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 600px;
+    height: 220px;
+    margin: auto;
+    position: relative;
+    left: -90px;
+    top: 160px;
+    color: white;
+}
+.benner h1 {
+    font-family: 'Playfair Display', serif;
+}
+.botao {
+    width: 150px;
+    padding: 15px 10px;
+    text-align: center;
+    background-color: #fff;
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.445);
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.centralizar {
+    width: 1200px;
+    margin: auto;
+}
+
+.passo-a-passo {
+    display: flex;
+    justify-content: space-evenly;
+}
+.card {
+    text-align: center;
+    width: 250px;
+}
