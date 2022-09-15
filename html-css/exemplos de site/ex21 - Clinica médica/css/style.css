@@ -1,3 +1,8 @@
+:root {
+  --cor-principal: #00cad1;
+  --cor-texto: #0000008c;
+}
+
 /* Estilos Gerais */
 * {
   box-sizing: border-box;

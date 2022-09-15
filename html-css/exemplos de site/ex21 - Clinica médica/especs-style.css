@@ -1,0 +1,45 @@
+:root {
+    --cor-principal: #00cad1;
+    --cor-texto: #0000008c;
+  }
+
+.container {
+    margin: 20px auto;
+}
+.container-links-especialidades {
+    display: flex;
+}
+.links-especialidades a {
+    margin: 0px 10px;
+    text-transform: capitalize;
+    text-decoration: none;
+    border-bottom: 2px solid var(--cor-principal);
+    color: var(--cor-texto);
+}
+
+.titulo-especalidades {
+    text-align: center;
+}
+.container-titulo {
+    text-align: center;
+}
+.container-titulo h3 {
+    text-transform: capitalize;
+}
+
+.box-tabela-especialista {
+    display: flex;
+    width: 100%;
+}
+.box-tabela-especialista img {
+    width: 35%;
+}
+
+table {
+    width: 100%;
+    text-align: left;
+    text-transform: capitalize;
+}
+table thead {
+    background-color: var(--cor-principal);
+}
