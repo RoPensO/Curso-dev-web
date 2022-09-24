@@ -1,5 +1,102 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: sans-serif;
 }
 
+.topo {
+    border-bottom: 1px solid #d5d5d5;
+}
+.topo p {
+    padding: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+.limite {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+.bg-fundo {
+    min-height: 500px;
+    background-image: url(../img/capa.jpg);
+    background-size: cover;
+}
+.banner {
+    text-align: right;
+    padding: 50px 20px;
+    background: #00000085;
+}
+h1, h2 {
+    color: white;
+}
+h3 {
+    margin-bottom: 15px;
+}
+.conteudo {
+    padding: 30px 20px;
+    box-sizing: border-box;
+}
+.img-conteudo {
+    width: 250px;
+    height: 180px;
+    object-fit: contain;
+    padding: 15px 0;
+}
+.conteudo p {
+    margin-top: 10px;
+}
+.conteudo span {
+    border-left: 1px solid black;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.contato {
+    padding: 20px 0;
+    text-align: center;
+    background: #d92121;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contato h4 {
+    color: white;
+    font-size: 26px;
+    text-align: center;
+    background: #6c0000;
+}
+.campo-grupo {
+    display: flex;
+    flex-direction: column;
+}
+fieldset {
+    padding: 10px;
+    margin: 10px 0px;
+}
+label {
+    margin: 5px 0px;
+}
+footer {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    height: 30px;
+}
+button {
+    width: 100%;
+    border: none;
+    background: #d92121;
+    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+button:hover {
+    background: #6c0000;
+}
