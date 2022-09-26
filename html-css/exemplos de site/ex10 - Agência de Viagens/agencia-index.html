@@ -9,7 +9,7 @@
     <title>Agência de Viagens</title>
 </head>
 <body>
-    <header>
+    <header class="limite">
         <div class="topo">
             <div class="logo">
                 <img src="imagens/local-logo.png">
@@ -19,83 +19,83 @@
     </header>
 
     <main>
-        <section>
-            <h1>Solicite um Orçamento</h1>
-            <h2>Informe seus Dados</h2>
-            <form method="post" action="https://www.devmedia.com.br/codigos/missao/front-end/agencia-de-viagens/">
-                <label>Nome</label>
-                <input type="text" name="nome" placeholder="Nome Completo" required>
-                <label>Email</label>
-                <input type="email" name="email" placeholder="Email para Contato">
-                <label>Celular</label>
-                <input type="tel" name="telefone" placeholder="(xx) 99999-9999">
-
-                <label>Data de ida</label>
-                <input type="date" name="data-ida">
-                <label>Data de volta</label>
-                <input type="date" name="data-volta">
-
-                <label>Origem</label>
-                <select name="origem" id="origem">
-                    <option value="origem">partindo de</option>
-                </select>
-                <label>Destino</label>
-                <select name="destino" id="destino">
-                    <option value="destino">indo para</option>
-                </select>
-
-                <label>Quarto com cama infantil?</label>
-                <input type="radio" name="cama-criança" id="sim" value="Sim">
-                <label for="sim">Sim</label>
-                <input type="radio" name="cama-criança" id="não" value="Não">
-                <label for="não">Não</label>
-
-                <label>Preferência da hospedagem</label>
-                <input type="checkbox" name="piscina" id="checkbox-piscina">
-                <label for="checkbox-piscina">Piscina</label>
-                <input type="checkbox" name="wi-fi" id="checkbox-wi-fi">
-                <label for="checkbox-wi-fi">Wi-fi</label>
-                <input type="checkbox" name="garagem" id="checkbox-garagem">
-                <label for="checkbox-garagem">Garagem</label>
-                <input type="checkbox" name="suite" id="checkbox-suite">
-                <label for="checkbox-suite">Suite</label>
-                <button type="submit">Solicitar Orçamento</button>
-            </form>
+        <section class="limite">
+            <div class="formulario">
+                <h1>Solicite um Orçamento</h1>
+                <h2>Informe seus Dados</h2>
+                <form method="post" action="https://www.devmedia.com.br/codigos/missao/front-end/agencia-de-viagens/">
+                    <label>Nome</label>
+                    <input type="text" name="nome" placeholder="Nome Completo" required>
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="Email para Contato">
+                    <label>Celular</label>
+                    <input type="tel" name="telefone" placeholder="(xx) 99999-9999">
+                    <div>
+                        <label>Data de ida</label>
+                        <input type="date" name="data-ida">
+                        <label>Data de volta</label>
+                        <input type="date" name="data-volta">
+                        <label>Origem</label>
+                        <select name="origem" id="origem">
+                            <option value="origem">partindo de</option>
+                        </select>
+                        <label>Destino</label>
+                        <select name="destino" id="destino">
+                            <option value="destino">indo para</option>
+                        </select>
+                    </div>
+                    <label>Quarto com cama infantil?</label>
+                    <input type="radio" name="cama-criança" id="sim" value="Sim">
+                    <label for="sim">Sim</label>
+                    <input type="radio" name="cama-criança" id="não" value="Não">
+                    <label for="não">Não</label>
+                    <label>Preferência da hospedagem</label>
+                    <input type="checkbox" name="piscina" id="checkbox-piscina">
+                    <label for="checkbox-piscina">Piscina</label>
+                    <input type="checkbox" name="wi-fi" id="checkbox-wi-fi">
+                    <label for="checkbox-wi-fi">Wi-fi</label>
+                    <input type="checkbox" name="garagem" id="checkbox-garagem">
+                    <label for="checkbox-garagem">Garagem</label>
+                    <input type="checkbox" name="suite" id="checkbox-suite">
+                    <label for="checkbox-suite">Suite</label>
+                    <button type="submit">Solicitar Orçamento</button>
+                </form>
+            </div>
         </section>
         
-        <section>
+        <section class="limite">
             <div>
                 <h2>Ofertas</h2>
-                <p>Com até 50% de desconto</p>
-                <figure>
-                    <div>
+                <p>Com até <strong>50%</strong> de desconto</p>
+                <div class="galeria-oferta">
+                    <figure class="fotog sessao-foto">
                         <img src="imagens/rio.jpg" alt="Cristo Redentor">
-                        <span>Rio de Janeiro</span>
-                    </div>
-                    <div>
+                        <figcaption class="legenda">Rio de Janeiro</figcaption>
+                    </figure>
+                    <figure class="fotop sessao-foto">
                         <img src="imagens/manaus.jpg" alt="manaus">
-                        <span>Manaus</span>
+                        <figcaption class="legenda">Manaus</figcaption>
                         <img src="imagens/saopaulo.jpg" alt="são paulo">
-                        <span>São Paulo</span>
+                        <figcaption class="legenda">São Paulo</figcaption>
                         <img src="imagens/niteroi.jpg" alt="rio de janeiro">
-                        <span>Rio de Janeiro</span>
+                        <figcaption class="legenda">Rio de Janeiro</figcaption>
                         <img src="imagens/maranhao.jpg" alt="maranhão">
-                        <span>Maranhão</span>
-                    </div>
-                </figure>
+                        <figcaption class="legenda">Maranhão</figcaption>
+                    </figure>
+                </div>
             </div>
         </section>
 
-        <section>
+        <section class="limite">
             <h2>Explore a Naruteza</h2>
             <p>Viaje conosco e veja o melhor que a natureza tem a oferecer.</p>
-            <div>
-                <div>
+            <div class="natureza">
+                <div class="sessao-foto">
                     <img src="imagens/lencol.jpg" alt="lençois maranhenses">
                     <h3>Lençois Maranhenses, Brasil</h3>
                     <p>Ida e Volta a partir de R$79,00</p>
                 </div>
-                <div>
+                <div class="sessao-foto">
                     <img src="imagens/goias.jpg" alt="cachoeira santa barbara">
                     <h3>Cachoeira Santa Bárbara, Brasil</h3>
                     <p>Ida e Volta a partir de R$139,00</p>
@@ -104,7 +104,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="limite">
         <div>
             <h2>Contato</h2>
             <div>
