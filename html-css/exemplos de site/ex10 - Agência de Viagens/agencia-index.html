@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/agencia-style.css">
+    <title>Agência de Viagens</title>
+</head>
+<body>
+    <header>
+        <div class="topo">
+            <div class="logo">
+                <img src="imagens/local-logo.png">
+                <p>Agência de Viagens</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <h1>Solicite um Orçamento</h1>
+            <h2>Informe seus Dados</h2>
+            <form method="post" action="https://www.devmedia.com.br/codigos/missao/front-end/agencia-de-viagens/">
+                <label>Nome</label>
+                <input type="text" name="nome" placeholder="Nome Completo" required>
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Email para Contato">
+                <label>Celular</label>
+                <input type="tel" name="telefone" placeholder="(xx) 99999-9999">
+
+                <label>Data de ida</label>
+                <input type="date" name="data-ida">
+                <label>Data de volta</label>
+                <input type="date" name="data-volta">
+
+                <label>Origem</label>
+                <select name="origem" id="origem">
+                    <option value="origem">partindo de</option>
+                </select>
+                <label>Destino</label>
+                <select name="destino" id="destino">
+                    <option value="destino">indo para</option>
+                </select>
+
+                <label>Quarto com cama infantil?</label>
+                <input type="radio" name="cama-criança" id="sim" value="Sim">
+                <label for="sim">Sim</label>
+                <input type="radio" name="cama-criança" id="não" value="Não">
+                <label for="não">Não</label>
+
+                <label>Preferência da hospedagem</label>
+                <input type="checkbox" name="piscina" id="checkbox-piscina">
+                <label for="checkbox-piscina">Piscina</label>
+                <input type="checkbox" name="wi-fi" id="checkbox-wi-fi">
+                <label for="checkbox-wi-fi">Wi-fi</label>
+                <input type="checkbox" name="garagem" id="checkbox-garagem">
+                <label for="checkbox-garagem">Garagem</label>
+                <input type="checkbox" name="suite" id="checkbox-suite">
+                <label for="checkbox-suite">Suite</label>
+                <button type="submit">Solicitar Orçamento</button>
+            </form>
+        </section>
+        
+        <section>
+            <div>
+                <h2>Ofertas</h2>
+                <p>Com até 50% de desconto</p>
+                <figure>
+                    <div>
+                        <img src="imagens/rio.jpg" alt="Cristo Redentor">
+                        <span>Rio de Janeiro</span>
+                    </div>
+                    <div>
+                        <img src="imagens/manaus.jpg" alt="manaus">
+                        <span>Manaus</span>
+                        <img src="imagens/saopaulo.jpg" alt="são paulo">
+                        <span>São Paulo</span>
+                        <img src="imagens/niteroi.jpg" alt="rio de janeiro">
+                        <span>Rio de Janeiro</span>
+                        <img src="imagens/maranhao.jpg" alt="maranhão">
+                        <span>Maranhão</span>
+                    </div>
+                </figure>
+            </div>
+        </section>
+
+        <section>
+            <h2>Explore a Naruteza</h2>
+            <p>Viaje conosco e veja o melhor que a natureza tem a oferecer.</p>
+            <div>
+                <div>
+                    <img src="imagens/lencol.jpg" alt="lençois maranhenses">
+                    <h3>Lençois Maranhenses, Brasil</h3>
+                    <p>Ida e Volta a partir de R$79,00</p>
+                </div>
+                <div>
+                    <img src="imagens/goias.jpg" alt="cachoeira santa barbara">
+                    <h3>Cachoeira Santa Bárbara, Brasil</h3>
+                    <p>Ida e Volta a partir de R$139,00</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <h2>Contato</h2>
+            <div>
+                <img src="imagens/local.png">
+                <p>Rio de Janeiro, RJ</p>
+                <img src="imagens/telefone.png">
+                <p>Telefone: (21) 99999-9999</p>
+                <img src="imagens/email.png">
+                <p>Email: contato@agencia.com.br</p>
+            </div>
+        </div>
+        <div>
+            <h2>Nossas Redes Sociais</h2>
+            <div>
+                <img src="imagens/fb.png">
+                <p>/AgenciaDeViagem</p>
+                <img src="imagens/ig.png">
+                <p>@AgenciaDeViagem</p>
+                <img src="imagens/tt.png">
+                <p>@AgenciaDeViagem</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
