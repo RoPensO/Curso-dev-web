@@ -1,0 +1,200 @@
+:root {
+    --roxo-principal: #5D16D1;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.limite {
+    width: 1024px;
+    margin: auto;
+}
+
+/* HEADER */
+.topo {
+    margin: auto;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+.logo img {
+    height: 30px;
+    padding-right: 5px;
+}
+.logo p {
+    color: var(--roxo-principal);
+    font-size: 20px;
+}
+
+/* sessão principal */
+main {
+    background-color: #8080801c;
+}
+.bg-form {
+    background-image: url(../imagens/bahia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* formulario */
+.formulario {
+    height: 620px;
+    background: white;
+}
+.topo-form {
+    text-align: center;
+    color: white;
+    background-color: var(--roxo-principal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+}
+.topo-form img {
+    height: 18px;
+    transform: rotate(-45deg);
+    padding-right: 3px;
+}
+.topo-form h1 {
+    font-size: 16px;
+}
+.formulario h2 {
+    margin: 20px 20px;
+}
+.formulario form {
+    margin: 20px 20px;
+    display: flex;
+    flex-direction: column;
+}
+.formulario form input, .formulario form select {
+    margin: 10px 0px;
+}
+
+.ida-e-volta, .origem-destino {
+    display: flex;
+    justify-content: space-between;
+}
+.item {
+    display: flex;
+    flex-direction: column;
+    width: calc((100% / 2) - 10px);
+}
+
+.infantil {
+    margin: 10px 0px;
+}
+.check-infantil {
+    display: flex;
+    width: calc(100% / 6);
+    position: relative;
+    margin-top: 5px;
+}
+.crianca-nao {
+    position: absolute;
+    right: 0px;
+}
+
+.prerefencias {
+    width: calc((100% / 2) - 60px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+.prerefencias label {
+    position: relative;
+    right: 25px;
+}
+
+input, select {
+    padding: 2px;
+}
+button {
+    background-color: var(--roxo-principal);
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 150px;
+    cursor: pointer;
+    margin: 10px 0px;
+}
+
+.titulo {
+    margin-top: 40px;
+}
+.titulo h2 {
+    margin: 10px 0px;
+}
+.titulo p {
+    margin: 10px 0px;
+}
+.galeria-oferta {
+    /* width: calc((100% / 2) - 10px); */
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+}
+
+.fotog {
+    width: 500px;
+}
+.fotog img {
+    width: 100%;
+}
+.fotop {
+    display: flex;
+
+    width: 500px;
+}
+.fotop img {
+    width: 40%;
+}
+
+
+.natureza {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 450px;
+    position: relative;
+}
+.sessao-foto {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+}
+.sessao-foto img {
+    width: 500px;
+}
+
+
+footer {
+    background: var(--roxo-principal);
+    width: 100%;
+    padding: 10px;
+    margin-top: 30px;
+}
+.final {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    color: white;
+}
+.final img {
+    height: 15px;
+    padding-right: 5px;
+}
+.contato h2, .social-media h2 {
+    margin-bottom: 15px;
+}
