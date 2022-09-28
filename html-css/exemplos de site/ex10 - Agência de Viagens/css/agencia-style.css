@@ -1,12 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;900&display=swap');
+
+
 :root {
-    --roxo-principal: #5D16D1;
+    --roxo-principal: #5D15D1;
 }
 
 * {
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: "raleway", sans-serif;
     margin: 0;
     padding: 0;
+}
+html {
+    background-color: #80808029;
 }
 
 .limite {
@@ -21,26 +27,23 @@
 .logo {
     display: flex;
     align-items: center;
-    height: 50px;
+    height: 55px;
 }
 .logo img {
-    height: 30px;
-    padding-right: 5px;
+    height: 32px;
+    margin-right: 10px;
 }
 .logo p {
     color: var(--roxo-principal);
-    font-size: 20px;
+    font-size: 24px;
 }
 
 /* sessão principal */
-main {
-    background-color: #8080801c;
-}
 .bg-form {
     background-image: url(../imagens/bahia.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 700px;
+    height: auto;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -49,33 +52,41 @@ main {
 
 /* formulario */
 .formulario {
-    height: 620px;
+    margin: 50px 0px;
     background: white;
 }
 .topo-form {
     text-align: center;
-    color: white;
     background-color: var(--roxo-principal);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 30px;
+    height: 35px;
 }
 .topo-form img {
-    height: 18px;
+    height: 20px;
     transform: rotate(-45deg);
-    padding-right: 3px;
 }
 .topo-form h1 {
-    font-size: 16px;
+    font-size: 14px;
+    color: white;
+    margin-left: 5px;
 }
 .formulario h2 {
     margin: 20px 20px;
+    font-size: 22px;
+    font-weight: 600;
+}
+input, select {
+    height: 32px;
 }
 .formulario form {
-    margin: 20px 20px;
+    margin: 24px 20px;
     display: flex;
     flex-direction: column;
+}
+.formulario form label {
+    font-size: 16px;
 }
 .formulario form input, .formulario form select {
     margin: 10px 0px;
@@ -96,13 +107,18 @@ main {
 }
 .check-infantil {
     display: flex;
+    justify-content: space-between;
     width: calc(100% / 6);
     position: relative;
     margin-top: 5px;
 }
-.crianca-nao {
-    position: absolute;
-    right: 0px;
+.crianca {
+    display: flex;
+    align-items: center;
+}
+.crianca label {
+    position: relative;
+    left: 5px;
 }
 
 .prerefencias {
@@ -110,24 +126,22 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 10px 0px;
 }
 .prerefencias label {
     position: relative;
-    right: 25px;
+    right: 20px;
 }
 
-input, select {
-    padding: 2px;
-}
+
 button {
     background-color: var(--roxo-principal);
     color: white;
-    padding: 10px;
     border: none;
-    width: 150px;
+    width: 160px;
+    height: 32px;
     cursor: pointer;
-    margin: 10px 0px;
+    font-size: 16px;
+    margin-top: 12px;
 }
 
 .titulo {
@@ -138,6 +152,7 @@ button {
 }
 .titulo p {
     margin: 10px 0px;
+    font-size: 16px;
 }
 .galeria-oferta {
     /* width: calc((100% / 2) - 10px); */
@@ -168,14 +183,28 @@ button {
     justify-content: space-between;
     height: 450px;
     position: relative;
+    margin-bottom: 50px;
 }
 .sessao-foto {
-    height: 200px;
     display: flex;
     flex-direction: column;
+    background-color: #fff;
+    height: 470px;
 }
 .sessao-foto img {
     width: 500px;
+}
+.sessao-foto .texto {
+    margin: 15px;    
+}
+.sessao-foto .texto h3 {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.sessao-foto .texto p {
+    font-size: 14px;
+    color: #757575;
 }
 
 
@@ -183,7 +212,6 @@ footer {
     background: var(--roxo-principal);
     width: 100%;
     padding: 10px;
-    margin-top: 30px;
 }
 .final {
     display: flex;
