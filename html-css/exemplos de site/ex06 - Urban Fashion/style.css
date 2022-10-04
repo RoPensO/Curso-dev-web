@@ -45,13 +45,6 @@ nav ul li a {
     margin-left: 10%;
     margin-top: 10%;
 }
-.content h1 {
-    font-size: 60px;
-    font-weight: 100;
-    margin-top: 24px;
-    margin-bottom: 15px;
-    color: #232d60;
-}
 .content p {
     font-size: 20px;
     color: #6a7199;
@@ -65,6 +58,13 @@ nav ul li a {
     text-decoration: none;
     color: #fff;
     box-shadow: 3px 8px 22px rgba(94, 28, 68, 0.015);
+}
+.content h1 {
+    font-size: 60px;
+    font-weight: 100;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    color: #232d60;
 }
 .arrow-icons {
     margin-top: 40px;
@@ -84,7 +84,7 @@ nav ul li a {
 .social-links {
     transform: rotate(-90deg);
     position: absolute;
-    bottom: 180px;
+    bottom: 230px;
     left: -80px;
 }
 .social-links a {
@@ -92,4 +92,5 @@ nav ul li a {
     color: #6a7199;
     padding: 20px;
     font-size: 14px;
+    font-weight: bold;
 }

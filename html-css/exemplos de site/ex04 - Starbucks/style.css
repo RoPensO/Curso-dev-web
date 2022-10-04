@@ -97,6 +97,7 @@ header ul li a:hover {
 }
 .content .imgBox img {
     max-width: 300px;
+    cursor: grab;
 }
 .thumb {
     position: absolute;
@@ -114,6 +115,7 @@ header ul li a:hover {
 }
 .thumb li:hover {
     transform: translateY(-15px);
+    cursor: grab;
 }
 .thumb li img {
     max-width: 60px;
