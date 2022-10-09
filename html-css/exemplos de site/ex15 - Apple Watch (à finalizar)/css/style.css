@@ -10,8 +10,8 @@
 
 .site {
     display: flex;
-    max-width: 1200px;
-    height: 95vh;
+    max-width: 1366px;
+    height: 100vh;
     margin: auto;
 }
 
@@ -21,8 +21,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    min-width: 60px;
+    min-width: 100px;
     height: 100vh;
+    background-color: #fff;
 }
 .menu-burguer img {
     width: 30px;
@@ -40,19 +41,30 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 20px;
 }
 .logo {
-    height: 50px;
+    height: 40px;
 }
 header nav ul {
     display: flex;
     list-style: none;
 }
 header nav ul li a {
-    padding-left: 20px;
+    padding: 0 30px;
     text-decoration: none;
+    color: white;
 }
-
+.shop img {
+    height: 25px;
+}
+.shop span {
+    font-size: 25px;
+    color: white;
+    position: relative;
+    bottom: 5px;
+    padding: 0 25px;
+}
 
 
 main {
@@ -65,7 +77,12 @@ main {
 
 
 .conteudo {
+    box-sizing: border-box;
     margin: 10px;
+    border-radius: 15px 15px 100px 15px;
+    padding: 20px;
+    background: linear-gradient(90deg, #E7BEB8 , #DD8D86);
+    color: white;
 }
 
 
@@ -91,8 +108,16 @@ main {
 
 button {
     border: none;
-    padding: 10px 40px;
-    border: 2px solid #b3b3b3;
+    padding: 10px 50px;
+    border: 2px solid white;
+    font-size: 18px;
+    color: white;
     background: transparent;
-    border-radius: 20px;
+    border-radius: 100px;
 }
+
+.galeria {
+    position: relative;
+    top: 40px;
+}
+
