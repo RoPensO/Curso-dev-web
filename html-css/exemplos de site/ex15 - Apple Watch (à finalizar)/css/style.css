@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'roboto', sans-serif;
+}
+
+
+.site {
+    display: flex;
+    max-width: 1200px;
+    height: 95vh;
+    margin: auto;
+}
+
+
+.lateral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 60px;
+    height: 100vh;
+}
+.menu-burguer img {
+    width: 30px;
+    margin: 25px 0;
+}
+.social-links {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    height: 50px;
+}
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+header nav ul li a {
+    padding-left: 20px;
+    text-decoration: none;
+}
+
+
+
+main {
+    height: 80%;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+
+.conteudo {
+    margin: 10px;
+}
+
+
+.esquedo {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.esquerdo h1 {
+    font-size: 60px;
+    padding-bottom: 20px;
+}
+.esquerdo p {
+    width: 70%;
+    padding-bottom: 20px;
+}
+
+
+.direito {
+    width: 50%;
+}
+
+
+button {
+    border: none;
+    padding: 10px 40px;
+    border: 2px solid #b3b3b3;
+    background: transparent;
+    border-radius: 20px;
+}
