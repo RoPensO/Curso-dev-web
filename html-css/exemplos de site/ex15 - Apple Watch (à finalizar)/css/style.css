@@ -10,7 +10,7 @@
 
 .site {
     display: flex;
-    max-width: 1366px;
+    max-width: 1300px;
     height: 100vh;
     margin: auto;
 }
@@ -34,6 +34,9 @@
     flex-direction: column;
     margin-bottom: 25px;
 }
+.social-links a {
+    margin-top: 10px;
+}
 
 
 
@@ -51,12 +54,18 @@ header nav ul {
     list-style: none;
 }
 header nav ul li a {
-    padding: 0 30px;
+    margin: 0px 30px;
+    padding: 5px 0;
     text-decoration: none;
     color: white;
 }
+header nav ul li a:hover {
+    border-bottom: 2px solid;
+}
+
 .shop img {
     height: 25px;
+    cursor: pointer;
 }
 .shop span {
     font-size: 25px;
@@ -64,6 +73,7 @@ header nav ul li a {
     position: relative;
     bottom: 5px;
     padding: 0 25px;
+    cursor: default;
 }
 
 
@@ -103,6 +113,8 @@ main {
 
 .direito {
     width: 50%;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -114,10 +126,44 @@ button {
     color: white;
     background: transparent;
     border-radius: 100px;
+    cursor: pointer;
 }
+button:hover {
+    box-shadow: 1px 5px 8px #dd8d8657;
+}
+
+
 
 .galeria {
+    max-height: 400px;
+    max-width: 100%;
     position: relative;
-    top: 40px;
+    top: 30px;
+    right: 100px;
+    overflow: hidden;
+}
+.galeria img {
+    height: 100%;
+}
+.shadow {
+    width: 400px;
+    height: 10px;
+    position: relative;
+    top: 50px;
+    right: 100px;
+    border-radius: 100%;
+    background: #2e1e1c;
+    filter: blur(20px);
 }
 
+.seletores {
+    display: flex;
+    flex-direction: column;
+}
+.seletor {
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    margin: 10px 0;
+}
