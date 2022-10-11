@@ -144,30 +144,37 @@ button {
 }
 /* fim formulario */
 
-/* ofertas */
-.titulo {
-    margin-top: 40px;
-}
-.titulo h2 {
-    margin-bottom: 10px;
-    font-size: 20px;
-}
 .titulo p {
-    margin-bottom: 15px;
-    font-size: 16px;
+    margin-bottom: 10px;
 }
-.galeria-oferta {
-    width: 100%;
-    height: 375px;
+
+/* ofertas */
+.ofertas {
+    margin: 30px auto;
+}
+.galeria {
     display: flex;
-    justify-content: space-between;
-    background-color: aqua;
 }
-.fotog {
+.foto {
+    width: 50%;
+}
+.sessao-destaque img {
+    width: 500px;
+}
+.sessao-4-fotos {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.sessao-4-fotos img {
+    width: 240px;
+    height: 170px;
+    margin: 5px;
+    object-fit: cover;
     position: relative;
-    width: calc(50% - 10px);
-    height: 100%;
 }
+
+/* fim ofertas(FINALMENTE) */
 
 
 .natureza {

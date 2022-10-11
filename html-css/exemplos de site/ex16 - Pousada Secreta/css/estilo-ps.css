@@ -17,10 +17,11 @@ header {
 }
 nav {
     margin: auto;
-    width: 1024px;
+    max-width: 1024px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0 20px;
 }
 .logo {
     font-size: 20px;
@@ -44,7 +45,9 @@ nav {
 .menu a:hover {
     border-bottom: 2px solid grey;
 }
-
+main {
+    width: 100%;
+}
 .banner {
     background-image: url('../imagens/img-fundo.jpg');
     background-repeat: no-repeat;
@@ -122,11 +125,8 @@ nav {
 .rota {
     width: 100%;
 }
-.rota a img {
+.rota iframe {
     width: 100%;
-    max-width: 2000px;
-    display: flex;
-    justify-content: center;
 }
 
 
@@ -190,4 +190,8 @@ footer {
     color: white;
     font-size: 18px;
     font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+
 }
