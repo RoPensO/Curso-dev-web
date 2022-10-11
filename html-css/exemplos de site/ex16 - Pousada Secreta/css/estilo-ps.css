@@ -45,9 +45,6 @@ nav {
 .menu a:hover {
     border-bottom: 2px solid grey;
 }
-main {
-    width: 100%;
-}
 .banner {
     background-image: url('../imagens/img-fundo.jpg');
     background-repeat: no-repeat;
