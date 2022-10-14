@@ -51,7 +51,7 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     height: auto;
-    width: 100%;
+    max-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -134,9 +134,13 @@ input, select {
     align-items: center;
     justify-content: space-between;
 }
-.prerefencias label {
+.prerefencias div {
+    display: flex;
+    align-items: center;
+}
+.prerefencias div label {
     position: relative;
-    right: 20px;
+    left: 5px;
 }
 
 
@@ -160,25 +164,28 @@ button {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    height: auto;
 }
 .foto-destaque {
-    width: calc(50% - 10px);
-    height: 100%;
+    width: 50%;
+    height: auto;
     position: relative;
+    margin: 10px;
 }
 .foto-destaque img {
     width: 100%;
     height: 100%;
 }
 .quatro-imagens {
-    width: calc(50% - 10px);
+    width:50%;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
+    margin: 10px;
 }
 .quatro-imagens div {
     width: calc(50% - 10px);
     position: relative;
-    margin: 5px;
     box-sizing: border-box;
 }
 .quatro-imagens div img {
@@ -200,18 +207,21 @@ figcaption {
     width: 100%;
     display: flex;
     justify-content: space-between;
-    height: 450px;
-    position: relative;
+    height: auto;
     margin-bottom: 50px;
 }
 .sessao-foto {
     display: flex;
     flex-direction: column;
     background-color: #fff;
-    height: 470px;
+    height: auto;
+    width: calc(100% /2);
+    margin: 10px;
 }
 .sessao-foto img {
-    width: 500px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .sessao-foto .texto {
     margin: 15px;    
@@ -245,9 +255,64 @@ footer {
 .contato h2, .social-media h2 {
     margin-bottom: 15px;
 }
-/* 
+
+
 @media (max-width: 768px) {
-   .limite {
-    max-width: 768px;
-   }
+    .limite {
+        max-width: 700px;
+    }
+    .galeria {
+        flex-direction: column;
+    }
+    .foto-destaque {
+        width: 100%;
+        height: 200px;
+    }
+    .foto-destaque img {
+        object-fit: cover;
+    }
+    .quatro-imagens {
+        width: 100%;
+    }
+    .quatro-imagens div {
+        width: 100%;
+        height: 200px;
+        margin: 10px 0;
+    }
+    .quatro-imagens div img {
+        object-fit: cover;
+    }
+    .natureza {
+        flex-direction: column;
+    }
+    .sessao-foto {
+        width: 100%;
+    }
+    .final {
+        flex-direction: column;
+        align-items: center;
+    }
+    button {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 540px) {
+    .limite {
+        max-width: 500px;
+    }
+    .ida-e-volta, .origem-destino {
+        flex-direction: column;
+    }
+    .item {
+        width: 100%;
+    }
+    .prerefencias {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .check-infantil {
+        flex-direction: column;
+    }
 }
