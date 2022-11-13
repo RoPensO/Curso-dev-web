@@ -38,11 +38,16 @@ h3 {
     padding: 30px 20px;
     box-sizing: border-box;
 }
+.imgs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 .img-conteudo {
-    width: 250px;
+    width: 240px;
     height: 180px;
     object-fit: contain;
-    padding: 15px 0;
+    padding: 15px 5px;
 }
 .conteudo p {
     margin-top: 10px;
