@@ -17,7 +17,8 @@
     margin-bottom: 30px;
 }
 .galeria img {
-    height: 200px;
+    width: calc(90%/3);
+    margin: 0 5px;
     cursor: pointer;
 }
 .info-quarto h2 {
@@ -33,4 +34,31 @@
 }
 .espaco {
     color: white;
+}
+
+@media (max-width: 768px) and (min-width: 556px) {
+    .espaco {
+        display: none;
+    }
+}
+
+@media (max-width: 555px) {
+    .espaco {
+        display: none;
+    }
+    .info-quarto ul {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+        list-style: none;
+        margin-bottom: 50px;
+        padding: 0;
+    }
+    .galeria {
+        flex-direction: column;
+    }
+    .galeria img {
+        width: 95%;
+        margin: 5px auto;
+    }
 }

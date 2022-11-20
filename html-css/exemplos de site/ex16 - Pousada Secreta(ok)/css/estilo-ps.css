@@ -17,7 +17,7 @@ header {
 }
 nav {
     margin: auto;
-    max-width: 1024px;
+    max-width: 90%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -75,7 +75,7 @@ nav {
 }
 
 .quartos, .rota, .sobre, .infos {
-    width: 1024px;
+    max-width: 1024px;
     margin: auto;
 }
 .apresentacao {
@@ -100,12 +100,13 @@ nav {
     justify-content: space-between;
 }
 .card {
-    display: flex;
-    flex-direction: column;
+    max-width: calc(90% /3);
     border-bottom: 2px solid #49997C;
 }
 .card img {
-    height: 190px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
 .card a {
     text-align: center;
@@ -135,7 +136,7 @@ nav {
 .info {
     display: flex;
     justify-content: space-between;
-    width: 450px;
+    width: 45%;
     margin: 10px;
 }
 .info .textos {
@@ -160,10 +161,11 @@ footer {
 }
 .dados {
     display: flex;
-    justify-content: space-between;
-    width: 1024px;
+    justify-content: space-around;
+    max-width: 1024px;
     margin: auto;
     color: white;
+    flex-wrap: wrap;
 }
 .contato {
     font-size: 20px;
@@ -189,6 +191,29 @@ footer {
     font-weight: 500;
 }
 
-@media screen and (max-width: 768px) {
+@media (min-width: 555px) and (max-width: 768px) {
+    
+}
 
+@media (min-width: 425px) and (max-width: 554px) {
+    nav {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .cards-quartos {
+        flex-direction: column;
+    }
+    .card {
+        max-width: 100%;
+    }
+    .infos {
+        flex-direction: column;
+    }
+    .info {
+        width: 90%;
+    }
+    .dados {
+        flex-direction: column;
+        align-items: center;
+    }
 }
