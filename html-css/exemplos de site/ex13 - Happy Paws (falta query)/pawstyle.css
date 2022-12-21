@@ -66,7 +66,7 @@
 /* banner */
 .banner {
     display: flex;
-    width: 1000px;
+    max-width: 1000px;
     height: 400px;
     display: flex;
     justify-content: space-evenly;
@@ -102,11 +102,12 @@
 
 .bandir {
     width: calc(100% / 2);
+    background-color: aqua;
 }
 .bandir img {
     width: 100%;
     position: relative;
-    top: 30px;
+    top: 31px;
     right: 40px;
 }
 
