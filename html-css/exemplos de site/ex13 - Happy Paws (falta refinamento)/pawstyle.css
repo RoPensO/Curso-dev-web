@@ -318,7 +318,12 @@ footer {
 @media (max-width: 425px) {
     .topo {
         height: auto;
-
+    }
+    .logo a img {
+        margin: 20px auto;
+    }
+    .navegacao {
+        display: none;
     }
 
     .topo-menu, .final, .cards {
@@ -326,4 +331,39 @@ footer {
         align-items: center;
         width: auto;
     }
+
+    .banesq {
+        margin-bottom: 20px;
+    }
+    .bandir img {
+        display: none;
+    }
+
+    .card {
+        width: 90%;
+        margin-bottom: 35px;
+    }
+    .card h2 {
+        font-size: 25px;
+    }
+    .card h3 {
+        font-size: 17px;
+    }
+    .card span {
+        font-size: 18px;
+        left: 110px;
+    }
+
+    .artigo {
+        margin-bottom: 30px;
+    }
+    .artigo span {
+        left: 110px;
+    }
+
+    .section {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    
 }
