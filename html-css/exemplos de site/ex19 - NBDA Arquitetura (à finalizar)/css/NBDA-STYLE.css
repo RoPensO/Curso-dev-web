@@ -71,16 +71,3 @@ div a {
     cursor: pointer;
 }
 
-.centralizar {
-    width: 1200px;
-    margin: auto;
-}
-
-.passo-a-passo {
-    display: flex;
-    justify-content: space-evenly;
-}
-.card {
-    text-align: center;
-    width: 250px;
-}
