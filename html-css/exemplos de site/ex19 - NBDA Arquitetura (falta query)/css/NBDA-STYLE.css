@@ -10,7 +10,7 @@
     margin: auto;
 }
 
-/* topo */
+/* menu topo */
 .menu {
     width: 1200px;
     height: 60px;
@@ -44,13 +44,14 @@ div a {
     padding: 10px 30px;
     border: 1px solid white;
 }
+
+/* header */
 .topo {
     background-image: url(../imagens/header.jpg);
     background-size: cover;
     background-position-y: -260px;
     height: 100vh;
 }
-
 .banner {
     display: flex;
     flex-direction: column;
@@ -64,7 +65,8 @@ div a {
     color: white;
 }
 .benner h1 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
 }
 .botao {
     width: 150px;
