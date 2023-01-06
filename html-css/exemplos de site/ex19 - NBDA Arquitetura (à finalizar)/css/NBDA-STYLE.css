@@ -68,27 +68,28 @@ div a {
 }
 .botao {
     width: 150px;
-    padding: 15px 10px;
+    padding: 15px 40px;
     text-align: center;
     background-color: #fff;
     color: black;
     border: 1px solid rgba(0, 0, 0, 0.445);
     font-weight: 400;
     cursor: pointer;
+    font-size: 14px;
 }
 
  /* main */
- .titulo {
+ .titulo, .project {
     display: flex;
     flex-direction: column;
     text-align: center;
     margin: 100px 0;
  }
-.titulo h2 {
+.titulo h2, .project h2 {
     margin-bottom: 30px;
     font-family: 'Times New Roman', Times, serif;
 }
-.titulo p {
+.titulo p, .project p {
     text-transform: uppercase;
     font-size: 13px;
     letter-spacing: 1px;
@@ -96,26 +97,26 @@ div a {
 
 
 /* bloco 1 */
-.bloco1 {
+.bloco1, .amostra {
     background-color: rgb(255, 255, 240);
     display: flex;
     align-items: center;
 }
-.bloco-txt {
+.bloco-txt, .amostra-txt {
     width: calc(100%/2);
     margin: 0 40px;
 }
-.bloco-txt h3 {
+.bloco-txt h3, .amostra-txt h3, .processo-txt h3 {
     text-transform: uppercase;
     font-size: 14px;
     letter-spacing: 1px;
 }
-.bloco-txt h2 {
+.bloco-txt h2, .amostra-txt h2 {
     margin: 30px 0;
     font-size: 50px;
     font-family: 'Times New Roman', Times, serif;
 }
-.bloco-txt p {
+.bloco-txt p, .amostra-txt p {
     font-size: 14px;
     letter-spacing: 1px;
 }
@@ -124,12 +125,12 @@ div a {
     text-transform: uppercase;
 }
 
-.bloco-img {
+.bloco-img, .amostra-img {
     width: calc(100% / 2);
     height: 600px;
     overflow: hidden;
 }
-.bloco-img img {
+.bloco-img img, .amostra-img img {
     width: 100%;
 }
 
@@ -137,13 +138,53 @@ div a {
 .processo {
     display: flex;
     flex-direction: column;
+    margin: 100px 0;
+    text-align: center;
+}
+.processo-txt h2 {
+    margin: 10px 0 50px;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
 }
 .processo-detalhe {
     display: flex;
+    max-width: 1024px;
+    margin: auto;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+.processo-detalhe h2 {
+    margin: 10px 0;
+}
+.processo-detalhe p {
+    width: 60%;
+    margin: auto;
+    line-height: 20px;
 }
 
-/* amostra */
-.amostra {
+/* project */
+.project {
     display: flex;
-    background-color: rgb(255, 255, 240);
+    flex-direction: column;
+    align-items: center;
+}
+.project > .botao {
+    background-color: black;
+    color: white;
+}
+
+
+/* footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0 30px 0;
+}
+footer > .logo {
+    margin-bottom: 30px;
+}
+footer nav a {
+    color: black;
+    text-transform: uppercase;
 }
