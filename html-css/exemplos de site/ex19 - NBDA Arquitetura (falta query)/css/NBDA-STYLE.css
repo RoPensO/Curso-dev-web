@@ -13,7 +13,7 @@
 /* menu topo */
 .menu {
     width: 1200px;
-    height: 60px;
+    height: 100px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -49,7 +49,7 @@ div a {
 .topo {
     background-image: url(../imagens/header.jpg);
     background-size: cover;
-    background-position-y: -260px;
+    background-position-y: -230px;
     height: 100vh;
 }
 .banner {
@@ -60,13 +60,20 @@ div a {
     height: 220px;
     margin: auto;
     position: relative;
-    left: -90px;
-    top: 160px;
+    right: 150px;
+    top: 180px;
     color: white;
 }
-.benner h1 {
+.banner h2 {
+    font-size: 15px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.banner h1 {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 50px;
+    font-size: 65px;
+    letter-spacing: 2px;
+    margin: 20px 0;
 }
 .botao {
     width: 150px;
@@ -78,6 +85,7 @@ div a {
     font-weight: 400;
     cursor: pointer;
     font-size: 14px;
+    letter-spacing: 1.5px;
 }
 
  /* main */
