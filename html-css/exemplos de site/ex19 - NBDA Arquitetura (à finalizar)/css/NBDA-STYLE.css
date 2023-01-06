@@ -5,6 +5,12 @@
     padding: 0;
     font-family: 'roboto';
 }
+.limitador {
+    max-width: 1024px;
+    margin: auto;
+}
+
+/* topo */
 .menu {
     width: 1200px;
     height: 60px;
@@ -71,4 +77,73 @@ div a {
     cursor: pointer;
 }
 
- 
+ /* main */
+ .titulo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 100px 0;
+ }
+.titulo h2 {
+    margin-bottom: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.titulo p {
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+
+/* bloco 1 */
+.bloco1 {
+    background-color: rgb(255, 255, 240);
+    display: flex;
+    align-items: center;
+}
+.bloco-txt {
+    width: calc(100%/2);
+    margin: 0 40px;
+}
+.bloco-txt h3 {
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.bloco-txt h2 {
+    margin: 30px 0;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.bloco-txt p {
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.botao {
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+.bloco-img {
+    width: calc(100% / 2);
+    height: 600px;
+    overflow: hidden;
+}
+.bloco-img img {
+    width: 100%;
+}
+
+/* processo */
+.processo {
+    display: flex;
+    flex-direction: column;
+}
+.processo-detalhe {
+    display: flex;
+}
+
+/* amostra */
+.amostra {
+    display: flex;
+    background-color: rgb(255, 255, 240);
+}
