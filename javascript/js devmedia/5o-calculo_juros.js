@@ -9,7 +9,8 @@ let valorTotal ='';
 
 if (diasAtraso >= 15) {
     valorTotal = Number(valorInicial) + Number((valorInicial * 10) / 100);
-} else if (diasAtraso == 1) {
+} else if (diasAtraso <= 1) {
+    valorTotal = valorInicial
     console.log("Está tudo em dia!")
 } else {
     valorTotal = Number(valorInicial) + Number((valorInicial * 5) / 100);
