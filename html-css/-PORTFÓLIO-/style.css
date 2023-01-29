@@ -24,26 +24,33 @@ html {
 
 
 /* inicio menu */
-.menu-topo {
+.menu {
     width: 100%;
     height: 60px;
     margin-bottom: 60px;
     background-color: var(--cor_principal);
 }
-.menu-topo nav {
-    width: 700px;
-    margin: auto;
+.menu-topo {
+    max-width: 600px;
     display: flex;
     justify-content: space-between;
+    margin: auto;
 }
-.menu-topo nav a, .menu-topo nav div {
-    margin: 20px 10px;
+.menu-topo nav {
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+.menu-topo nav a, .menu-topo div {
+    margin: 0 10px;
     color: white;
     text-decoration: none;
 }
 .logo {
-    padding: 10px 10px;
-    border-radius: 6px;
+    padding: 20px 30px;
+    position: relative;
+    top: 20px;
+    border-radius: 10px;
     background-color: var(--cor_logo);
     box-shadow: 0px 2px 5px grey;
 }
@@ -62,13 +69,15 @@ html {
     max-width: 1024px;
     margin-bottom: 100px;
 }
-.header, .botoes {
+.header {
     display: flex;
 }
 .direita, .esquerda {
     width: calc(100%/1.5);
 }
 .direita {
+    display: flex;
+    flex-direction: column;
     margin-left: 30px;
     margin-top: 50px;
 }
@@ -85,9 +94,12 @@ html {
     left: 30px;
 }
 
+.botoes {
+    display: flex;
+    justify-content: flex-start;
+}
 .botoes button {
     padding: 10px 30px;
-    margin-right: 20px;
     border: none;
     border-radius: 10px;
 }
@@ -98,6 +110,7 @@ html {
 }
 .btn-portfolio {
     background: var(--cor_principal);
+    margin-right: 20px;
 }
 .btn-contato {
     background: var(--cor_botao);
@@ -120,31 +133,38 @@ html {
     justify-content: center;
     flex-direction: column;
     background-color: rgb(240, 240, 240);
-    height: 450px;
+    min-height: 450px;
     position: relative;
     bottom: 80px;
 }
 .portfolio h2 {
     text-transform: uppercase;
-    margin-bottom: 15px;
+    margin: 20px 0;
 }
 .portfolio p {
-    margin-bottom: 30px;
+    text-align: center;
 }
 
 .cards {
+    width: 100%;
+    margin: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
     text-align: center;
 }
 .card {
-    margin: 0 50px;
+    /* margin: 0 50px; */
     border: 10px solid white;
     box-shadow: 2px 5px 10px rgb(190, 190, 190);
     border-radius: 5px;
     background-color: #fff;
-    width: 220px;
+    max-width: 220px;
     height: 300px;
+}
+.card a {
+    text-decoration: none;
+    color: black;
 }
 .card h3 {
     margin: 5px auto;
@@ -154,7 +174,6 @@ html {
 /* começo sobre */
 .sobre {
     position: relative;
-    left: 10px;
     bottom: 30px;
     display: flex;
     justify-content: center;
@@ -170,6 +189,7 @@ html {
 .sobre-descricao {
     width: calc(100%/3);
     margin-left: 60px;
+    font-size: 18px;
 }
 .sobre-descricao p {
     font-size: 16px;
@@ -187,14 +207,78 @@ footer {
     height: 200px;
 }
 footer h3 {
-    font-size: 18px;
-    margin: 15px 0;
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 15px;
 }
 footer h3 a {
     text-decoration: none;
     color: black;
-    font-size: 13px;
 }
 .social a img {
     margin: 0 10px;    
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .topo {
+    bottom: 50px;
+    }
+    .esquerda img {
+        width: 90%;
+    }
+    .card {
+        margin: 15px;
+    }
+    footer {
+        height: 150px;
+    }
+}
+
+@media (max-width: 767px) {
+    .menu {
+        display: flex;
+        justify-content: center;
+    }
+    .menu-topo nav {
+        display: none;
+    }
+    .topo {
+        left:0;
+    }
+    .direita {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .direita p, .direita h1 {
+        width: 100%;
+        text-align: center;
+    }
+    .botoes {
+        justify-content: center;
+    }
+    .esquerda {
+        display: none;
+    }
+    .portfolio {
+        height: auto;
+    }
+    .portfolio p {
+        margin: 0 10px;
+    }
+    .card {
+        margin: 20px 0;
+    }
+    .sobre {
+        flex-direction: column;
+        align-items: center;
+    }
+    .sobre img {
+        margin-top: 0px;
+    }
+    .sobre-descricao {
+        width: auto;
+        margin: 70px 40px 0;
+        text-align: center;
+    }
 }

@@ -9,14 +9,18 @@
 </head>
 <body>
    
-    <div class="menu-topo">
-        <nav>
-            <a href="#home">HOME</a>
-            <a href="#portfolio">PORTFÓLIO</a>
-            <div class="logo"><a href="#home">RPO</a></div>
-            <a href="#sobre">SOBRE</a>
-            <a href="#contato">CONTATO</a>
-        </nav>
+    <div class="menu" id="home">
+        <div class="menu-topo">
+            <nav>
+                <a href="#home">HOME</a>
+                <a href="#portfolio">PORTFÓLIO</a>
+            </nav>
+                <div class="logo"><a href="#home">RPO</a></div>
+            <nav>
+                <a href="#sobre">SOBRE</a>
+                <a href="#contato">CONTATO</a>
+            </nav>
+        </div>
     </div>
     <!-- fim do menu -->
 
@@ -44,26 +48,32 @@
         </section>
         <!-- fim do header -->
 
-        <section id="portfolio" >
+        <section id="portfolio">
             <div class="portfolio">
                 <h2>Portfolio</h2>
                 <p>Algumas das coisas que aprendi nessa jornada</p>
-                <div class="cards">
+                <div class="cards limitador">
             
                     <div class="card">
-                        <img src="imagens/trabalhos (1).jpg" alt="trabalho 1">
-                        <h3>Eisenbahn</h3>
-                        <p>Recriação (não oficial) <br> do site</p>
+                        <a href="https://ropenso.github.io/hotsite-eisenbahn/" target="_blank">
+                            <img src="imagens/trabalhos (1).jpg" alt="trabalho 1">
+                            <h3>Eisenbahn</h3>
+                            <p>Recriação (não oficial) <br> do site</p>
+                        </a>
                     </div>
                     <div class="card">
-                        <img src="imagens/trabalhos (2).jpg" alt="trabalho 2">
-                        <h3>Pousada Secreta</h3>
-                        <p>Desenvolvido dentro do curso da DevMedia</p>
+                        <a href="https://ropenso.github.io/pousada-secreta/" target="_blank">
+                            <img src="imagens/trabalhos (2).jpg" alt="trabalho 2">
+                            <h3>Pousada Secreta</h3>
+                            <p>Desenvolvido dentro do curso da DevMedia</p>
+                        </a>
                     </div>
                     <div class="card">
-                        <img src="imagens/trabalhos (3).jpg" alt="trabalho 3">
-                        <h3>Agência de viagens</h3>
-                        <p>Teste de inputs de registro para servidor</p>
+                        <a href="https://ropenso.github.io/agencia-de-viagens/" target="_blank">
+                            <img src="imagens/trabalhos (3).jpg" alt="trabalho 3">
+                            <h3>Agência de viagens</h3>
+                            <p>Teste de inputs de registro para servidor</p>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -85,9 +95,8 @@
     </main>
 
     <footer id="contato">
-        <div class="logo"><a href="index.html">RPO</a></div>
 
-        <h3><a href="#">HOME</a> | <a href="#portfolio">PORTFÓLIO</a> | <a href="#sobre">SOBRE</a> | <a href="#contato">CONTATO</a></h3>
+        <h3><a href="#home">HOME</a> | <a href="#portfolio">PORTFÓLIO</a> | <a href="#sobre">SOBRE</a> | <a href="#contato">CONTATO</a></h3>
 
         <div class="social">
             <a href="https://github.com/RoPensO" target="_blank"><img src="imagens/ico-github.svg"></a>
