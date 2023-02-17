@@ -15,12 +15,15 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
 .limite {
-    max-width: 1024px;
+    width: 1024px;
     margin: auto;
 }
+span {
+    color: var(--azul-principal);
+}
 
+/* logo */
 .logo {
     display: flex;
     align-items: center;
@@ -30,7 +33,7 @@
     margin: 10px;
 }
 .logo h3 {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 900;
 }
 .logo p {
@@ -43,7 +46,9 @@
 
 /* menu */
 .topo {
-    height: 120px;
+    height: 100px;
+    display: flex;
+    align-items: center;
 }
 .menu {
     display: flex;
@@ -65,12 +70,21 @@
     background-color: var(--azul-principal);
 }
 .conteudo-banner {
+    height: 600px;
     display: flex;
     align-items: center;
     color: white;
 }
 .banner-txt h2 {
     font-size: 30px;
+    margin: 20px 0;
+    line-height: 40px;
+    font-weight: bolder;
+}
+.banner-txt p {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 100;
 }
 
 
@@ -79,32 +93,50 @@
     background-color: var(--azul-escuro);
 }
 .anuncio {
-    height: 100px;
+    height: 130px;
     color: white;
+    display: flex;
+    align-items: center;
 }
 .conteudo-anuncio {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.conteudo-anuncio a {
+.anuncio-txt p {
+    margin-top: 10px;
+}
+.botao1, .botao2  {
+    font-size: 15px;
     text-decoration: none;
     text-transform: uppercase;
     color: white;
-    padding: 10px;
-    background-color: yellowgreen;
+    padding: 15px;
+    border-radius: 5px;
 }
-.conteudo-anuncio a::before {
+.botao1::before, .botao2::before {
     content: url(assets/icone-foguete.png);
     margin-right: 10px;
+    position: relative;
+    top: 3px;
 }
-
+.botao1 {
+    background-color: var(--azul-principal);
+}
 
 
 /* informações */
+.conteudo-informacoes {
+    margin: 80px 0;
+}
+.conteudo-informacoes h2 {
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+}
 .infos-bloco {
     display: flex;
-    margin: 30px 0;
+    margin: 50px 0;
 }
 .info {
     display: flex;
@@ -115,9 +147,19 @@
 .info img {
     height: 80px;
 }
+.info h2 {
+    font-size: 20px;
+    margin: 20px 0;
+}
+.info p {
+    font-size: 18px;
+}
 
 
 /* tabela de preços */
+.conteudo-tabela h2 {
+    text-align: center;
+}
 .tabela_precos {
     background-color: var(--cinza-medio);
 }
@@ -131,6 +173,9 @@
 .anuncio2 {
     background-color: var(--azul-principal);
 }
+.botao2 {
+    background-color: var(--azul-escuro);
+}
 
 
 /* footer */
@@ -138,4 +183,23 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+footer > .logo {
+    margin: 50px 0;
+}
+footer p {
+    font-weight: bold;
+    margin: 10px;
+    font-size: 14px;
+}
+.assinatura {
+    width: 100%;
+    background-color: var(--cinza-claro);
+    margin-top: 50px;
+}
+.assinatura p {
+    text-align: center;
+}
+.assinatura a {
+    text-decoration: none;
 }
