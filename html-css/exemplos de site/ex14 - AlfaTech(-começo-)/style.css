@@ -129,7 +129,7 @@ span {
 .conteudo-informacoes {
     margin: 80px 0;
 }
-.conteudo-informacoes h2 {
+.titulo h2 {
     font-size: 30px;
     font-weight: 800;
     text-align: center;
@@ -156,16 +156,52 @@ span {
 }
 
 
-/* tabela de preços */
-.conteudo-tabela h2 {
-    text-align: center;
-}
-.tabela_precos {
+/* tabela de planos */
+/* .tabela_precos {
     background-color: var(--cinza-medio);
+} */
+.conteudo-tabela {
+    margin: 80px;
 }
 
+/* tabela */
+.tabela {
+    display: flex;
+    justify-content: center;
+    max-width: 1024px;
+    text-align: center;
+    margin: 80px auto;
+    background-color: #fff;
+    box-shadow: 0 3px 25px 8px rgba(47, 134, 214, 1);
+    border-radius: 5px;
+}
+table {
+    width: 100%;
+}
+thead th h3 {
+    text-transform: uppercase;
+    margin: 15px;
+}
+thead th p {
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: grey;
+}
+tbody tr {
+    height: 50px;
+    font-weight: bold;
+}
+tbody td:hover {
+    background-color: var(--azul-principal);
+    color: white;
+    cursor: default;
+}
 .imagem-tabela {
-    height: 80px;
+    height: 100px;
+}
+.tabela tbody tr:nth-child(odd) {
+    background-color: var(--cinza-claro);
 }
 
 
@@ -187,7 +223,7 @@ footer {
 footer > .logo {
     margin: 50px 0;
 }
-footer p {
+footer > p, .assinatura p {
     font-weight: bold;
     margin: 10px;
     font-size: 14px;
