@@ -45,7 +45,7 @@ span {
 
 
 /* menu */
-.topo {
+.topo, .topo-preco {
     height: 100px;
     display: flex;
     align-items: center;
@@ -127,7 +127,7 @@ span {
 
 /* informações */
 .conteudo-informacoes {
-    margin: 80px 0;
+    margin-top: 80px;
 }
 .titulo h2 {
     font-size: 30px;
@@ -157,17 +157,18 @@ span {
 
 
 /* tabela de planos */
-/* .tabela_precos {
-    background-color: var(--cinza-medio);
-} */
+.tabela_planos {
+    background-color: var(--cinza-claro);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} 
 .conteudo-tabela {
-    margin: 80px;
+    margin-top: 50px;
 }
 
 /* tabela */
 .tabela {
-    display: flex;
-    justify-content: center;
     max-width: 1024px;
     text-align: center;
     margin: 80px auto;
@@ -195,7 +196,7 @@ tbody tr {
 tbody td:hover {
     background-color: var(--azul-principal);
     color: white;
-    cursor: default;
+    cursor: pointer;
 }
 .imagem-tabela {
     height: 100px;
@@ -221,7 +222,7 @@ footer {
     align-items: center;
 }
 footer > .logo {
-    margin: 50px 0;
+    margin-top: 50px;
 }
 footer > p, .assinatura p {
     font-weight: bold;
