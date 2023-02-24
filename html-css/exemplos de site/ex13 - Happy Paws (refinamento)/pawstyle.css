@@ -1,0 +1,369 @@
+:root {
+    --paw: #bf9e04ff;
+    --div: #eeeeeeff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.limitador {
+    max-width: 1024px;
+    margin: auto;
+}
+
+/* header */
+.topo {
+    height: 60px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 3px 15px grey;
+}
+.topo-menu {
+    width: 1024px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+}
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.logo a img {
+    height: 35px;
+    padding-right: 10px;
+}
+.logo a h2 {
+    color: white;
+    font-size: 20px;
+}
+
+.navegacao nav ul {
+    display: flex;
+}
+.navegacao nav ul li {
+    margin-left: 10px;
+    list-style: none;
+}
+.navegacao nav ul li a {
+    text-decoration: none;
+    color: var(--paw);
+}
+.navegacao nav ul li a:hover {
+    color: white;
+    border-bottom: 2px solid var(--paw);
+    padding-bottom: 5px;
+}
+
+/* banner */
+.banner {
+    display: flex;
+    max-width: 1000px;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.banesq {
+    width: calc(100% / 2.5);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.banesq p {
+    font-size: 16px;
+    color: var(--paw);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.banesq h1 {
+    font-size: 50px;
+    line-height: 45px;
+    margin-bottom: 30px;
+}
+.banesq button {
+    width: 150px;
+    border: none;
+    padding: 15px 20px;
+    background: var(--paw);
+    color: white;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border-radius: 10px;
+}
+
+.bandir {
+    width: calc(100% / 2);
+    /* background-color: aqua; */
+}
+.bandir img {
+    width: 100%;
+    position: relative;
+    top: 31px;
+    right: 40px;
+}
+
+/* produtos */
+.extensao {
+    background-color: var(--div);
+    max-width: 100vw;
+}
+
+.produtos {
+    max-width: 1024px;
+    padding: 50px 0;
+}
+.titulo {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+.cards {
+    display: flex;
+    justify-content: space-around;
+}
+.card {
+    width: 250px;
+    margin: 10px;
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 16px;
+    box-shadow: 0px 3px 10px grey;
+    position: relative;
+}
+.card img {
+    width: 100%;
+    padding: 15px;
+}
+.card h2 {
+    text-align: center;
+}
+.card h3 {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 15px
+}
+.card p {
+    margin-bottom: 15px;
+}
+.card span {
+    position: absolute;
+    background-color: var(--paw);
+    color: white;
+    bottom: -20px;
+    left: 70px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    /* box-shadow: 0px 3px 10px grey; */
+}
+
+/* sobre */
+.sobre {
+    display: flex;
+    align-items: center;
+    margin: 30px auto;
+}
+.sobre img {
+    width: calc(100% / 3);
+}
+.sobre h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.sobre p {
+    line-height: 20px;
+    text-align: justify;
+}
+.sobre-txt {
+    margin-right: 20px;
+}
+
+/* artigos */
+.artigo {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* margin-bottom: 30px; */
+}
+.artigo-txt {
+    width: 80%;
+    margin-right: 50px;
+}
+.artigo h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.artigo p {
+    line-height: 20px;
+    text-align: justify;
+}
+.artigo span {
+    width: 150px;
+    padding: 15px 20px;
+    background: var(--paw);
+    color: white;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    position: relative;
+    top: 35px;
+}
+.artigo img {
+    width: calc(100% / 4);
+}
+.artigo-txt {
+    margin-left: 20px;
+}
+
+/* footer */
+footer {
+    background-color: #000;
+}
+.final {
+    display: flex;
+    width: 100%;
+    color: white;
+    padding: 20px 0;
+}
+
+.section {
+    width: calc(100% /3);
+    margin: 0 5px;
+}
+
+
+.social .logo, .infos h3, .contact h3  {
+    margin: 0 0 10px 0;
+}
+.social-links a img {
+    height: 30px;
+    margin: 10px 0;
+}
+
+.contact input {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    margin: 15px 0;
+}
+.contact span {
+    position: relative;
+    background-color: var(--paw);
+    color: white;
+    bottom: -10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .banner {
+        margin-top: 20px;
+        height: auto;
+        width: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+    .banesq {
+        width: 100%;
+        align-items: center;
+    }
+    .banesq h1 {
+        text-align: center;
+    }
+    .bandir {
+        width: 50%;
+        align-items: center;
+    }
+    .bandir img {
+        top: 4px;
+        right: 0;
+    }
+
+    .sobre, .produtos, .artigo, .final {
+        margin: 0 20px;
+    }
+    .sobre-txt, .artigo-txt {
+        margin: 0;
+    }
+    .artigo img, .sobre img {
+        display: none;
+    }
+    .sobre {
+        margin-top: 20px;
+        justify-content: center
+    }
+    .artigo {
+        height: 400px;
+        justify-content: center;
+        align-items: center;
+    }
+    .artigo-txt {
+        width: 100%;
+    }
+
+    .contact input {
+        width: auto;
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 425px) {
+    .topo {
+        height: auto;
+    }
+    .logo a img {
+        margin: 20px auto;
+    }
+    .navegacao {
+        display: none;
+    }
+
+    .topo-menu, .final, .cards {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+    }
+
+    .banesq {
+        margin-bottom: 20px;
+    }
+    .bandir img {
+        display: none;
+    }
+
+    .card {
+        width: 90%;
+        margin-bottom: 35px;
+    }
+    .card h2 {
+        font-size: 25px;
+    }
+    .card h3 {
+        font-size: 17px;
+    }
+    .card span {
+        font-size: 18px;
+        left: 110px;
+    }
+
+    .artigo {
+        margin-bottom: 30px;
+    }
+    .artigo span {
+        left: 110px;
+    }
+
+    .section {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    
+}
