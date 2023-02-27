@@ -1,0 +1,211 @@
+:root {
+    --laranja-principal: #c4a47c;
+    --laranja-escuro: #604829;
+    --cinza-escuro: #666;
+    --cinza-claro: #ACACAC;
+
+    --fonte-titulos: 'Oswald', sans-serif;
+    --fonte-parallax: 'Fraunces', serif;
+    --fonte-textos: 'Lato', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100;0,9..144,200;0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;0,9..144,900;1,9..144,100;1,9..144,200;1,9..144,300;1,9..144,400;1,9..144,500;1,9..144,600;1,9..144,700;1,9..144,800;1,9..144,900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.limite {
+    width: 1024px;
+    margin: auto;
+}
+html {
+    scroll-padding-top: 100px;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: var(--laranja-escuro);
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+}
+.topo {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.topo img {
+    height: 100%;
+}
+.topo nav a {
+    font-family: var(--fonte-titulos);
+    font-weight: bold;
+    margin-left: 10px;
+    text-decoration: none;
+    color: var(--laranja-principal);
+}
+.topo nav a:hover {
+    text-shadow: 2px 5px 4px black;
+ }
+
+
+section {
+    text-align: center;
+}
+.parallax {
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.banner {
+    height: 100vh;
+}
+.banner {
+    background-image: url(../assets/parallax-imagem1.png);
+}
+.banner h1 {
+    position: relative;
+    top: 50%;
+    font-family: var(--fonte-parallax);
+    color: white;
+    font-size: 70px;
+    font-weight: lighter;
+}
+
+
+.texto {
+    margin: 80px 0;
+}
+.texto h2 {
+    font-family: var(--fonte-titulos);
+    color: var(--laranja-principal);
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.texto p {
+    font-family: var(--fonte-textos);
+    width: 900px;
+    font-size: 15px;
+    line-height: 25px;
+    margin: auto;
+    color: var(--cinza-escuro);
+}
+.motivo, .cafe {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.motivo {
+    background-image: url(../assets/parallax-imagem2.jpg);
+}
+.cafe {
+    background-image: url(../assets/parallax-imagem3.jpg);
+}
+.motivo h3, .cafe h3 {
+    font-family: var(--fonte-parallax);
+    font-size: 25px;
+    font-style: italic;
+    color: white;
+    font-weight: 100;
+    letter-spacing: 2px;
+    padding: 10px 30px;
+    background-color: var(--laranja-escuro);
+}
+
+
+.contato {
+    background-image: url(../assets/parallax-imagem4.png);
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titulo h2, .contatos {
+    background-color: var(--laranja-escuro);
+    color: white;
+    padding: 20px 20px;
+    width: 550px;
+    font-family: var(--fonte-titulos);
+}
+.contatos p {
+    margin-bottom: 10px;
+    text-shadow: 3px 3px 2px black;
+}
+iframe {
+    margin: 50px auto;
+}
+
+
+.horarios {
+    background-image: url(../assets/cafeteria.jpg);
+    color: white;
+    height: 90vh;
+    font-family: var(--fonte-textos);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.horarios h2 {
+    margin-bottom: 100px;
+}
+.lista {
+    width: 700px;
+    margin: 0 auto;
+}
+.lista li {
+    display: flex;
+    justify-content: space-between;
+}
+.lista li h3 {
+    width: 100px;
+    margin-bottom: 15px;
+    text-align: start;
+    font-size: 15px;
+    font-weight: 100;
+}
+.lista li > div {
+    height: 1px;
+    width: 450px;
+    background-color: white;
+    text-align: center;
+    position: relative;
+    top: 8px;
+}
+.lista li p {
+    width: 100px;
+    text-align: end;
+    font-size: 15px;
+    font-weight: 100;
+}
+.lista span {
+    color: var(--laranja-principal);
+}
+
+
+footer {
+    background-color: black;
+    color: white;
+    font-family: var(--fonte-textos);
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+footer p {
+    margin: 5px;
+}
+.botao {
+    position: absolute;
+    bottom: 45px;
+    left: 1200px;
+}

@@ -115,7 +115,7 @@ span {
     border-radius: 5px;
 }
 .botao1::before, .botao2::before {
-    content: url(assets/icone-foguete.png);
+    content: url(../assets/icone-foguete.png);
     margin-right: 10px;
     position: relative;
     top: 3px;
