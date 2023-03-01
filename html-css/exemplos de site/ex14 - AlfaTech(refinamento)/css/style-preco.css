@@ -47,6 +47,9 @@ thead th h3 {
     font-size: 30px;
     font-weight: bolder;
 }
+tbody {
+    height: 100px;
+}
 tbody tr {
     text-align: center;
 }

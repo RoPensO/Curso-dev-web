@@ -193,7 +193,7 @@ tbody tr {
     height: 50px;
     font-weight: bold;
 }
-tbody td:hover {
+.corpo-tabela td:hover {
     background-color: var(--azul-principal);
     color: white;
     cursor: pointer;
