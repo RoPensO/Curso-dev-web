@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --fundo: #373737;
+    --azul-escuro: #114766;
+    --azul-medio: #1C73A6;
+    --azul-claro: #238ECC;
+    --azul-clarissimo: #29A9F2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+    background-color: var(--fundo);
+}
+
+section {
+    height: 100vh;
+}
+
+/* .fundo {
+    width: 100%;
+    height: 60px;
+    background-color: var(--fundo);
+    filter: blur(10);
+    position: fixed;
+    backdrop-filter: blur(10px);
+} */
+.topo {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+}
+.topo > div {
+    width: calc(100%/2.5);
+    height: 2px;
+    background-color: #fff;
+    position: relative;
+    top: 7px;
+}
+.topo h1 {
+    text-align: center;
+    color: white;
+    margin-top: 15px;
+    font-size: 25px;
+}
+
+.menu {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+}
+.menu nav {
+    display: flex;
+    justify-content: space-around;
+}
+.menu nav a {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: calc(100%/4);
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menu nav a:nth-child(1) {
+    background-color: var(--azul-escuro);
+}
+.menu nav a:nth-child(2) {
+    background-color: var(--azul-medio);
+}
+.menu nav a:nth-child(3) {
+    background-color: var(--azul-claro);
+}
+.menu nav a:nth-child(4) {
+    background-color: var(--azul-clarissimo);
+}
+
+.home {
+    width: 1024px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.texto, .foto {
+    width: calc(100%/2);
+    color: white;
+}
+
+.texto h1 {
+    margin: 20px 0;
+    font-size: 50px;
+}
+button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: var(--azul-claro);
+    border: none;
+    border-radius: 6px;
+}
+button a {
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.foto {
+    text-align: center;
+}
+.foto img {
+    border: 10px solid white;
+    rotate: 15deg;
+}
+
+.trabalhos, .sobre, .contato {
+    display: flex;
+    flex-direction: column;
+}
+.titulo {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: white;
+    margin-top: 60px;
+}
+.trabalhos p, .contato p {
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    margin: 15px 0 20px;
+}
+.galeria {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.sobre {
+    width: 1024px;
+    margin: auto;
+}
+.info-sobre {
+    display: flex;
+}
+
+.foto, .texto-sobre {
+    width: calc(100%/2);
+}
+.texto-sobre {
+    text-align: end;
+    color: white;
+}
+
+
+.contato {
+    display: flex;
+    width: 1024px;
+    margin: auto;
+}
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.links {
+    display: flex;
+}
+.links a {
+    margin: 12px;
+}
+.links img {
+    height: 40px;
+    filter: invert(1);
+}
+.links img:hover {
+    filter: invert(0);
+}
+
+.campo-input {
+    display: flex;
+    flex-direction: column;
+}
