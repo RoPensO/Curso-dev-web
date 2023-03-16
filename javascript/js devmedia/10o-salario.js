@@ -1,7 +1,9 @@
+import entradaDados from 'readline-sync';
+
 let salarioMinimo = [
     {ano: 2010, salario: 510.00},
     {ano: 2011, salario: 545.00},
-    {ano: 2012, salario: 662.00},
+    {ano: 2012, salario: 622.00},
     {ano: 2013, salario: 678.00},
     {ano: 2014, salario: 724.00},
     {ano: 2015, salario: 788.00},
@@ -26,56 +28,82 @@ let inflacao = [
     {ano: 2020, ipca: 4.52}
 ];
 
-import entradaDados from 'readline-sync';
-
-console.log("\n Comparação salario minimo x inflação")
-console.log("\n1 - Listar salários mínimos de 2010 à 2020")
+console.log("Escolha uma das alternativas:\n")
+console.log("1 - Listar os salários minímos de 2010 à 2020")
 console.log("2 - Listar o índice IPCA de 2010 à 2020")
-console.log("3 - Comparação entre percentual de aumento salarial e IPCA\n")
+console.log("3 - Comparação entre o percentual de aumento salarial e o IPCA\n")
 
-let opcao = entradaDados.question("\nDigite sua escolha: ");
+let escolha = entradaDados.question("Digite o numero da sua escolha: ");
 
-if (opcao == 1) {
-    
-    console.log("\nValores do salário mínimo entre 2010 e 2020");
+escolha = Number(escolha);
 
-    for(let indice = 0; indice < salarioMinimo.length; indice++) {
+let anoLabel = "Ano:";
+let salarioLabel = "Salário mínimo:";
+let crescimentoLabel = "Crescimento Salarial:";
+let ipcaLabel = "Inflação IPCA:";
 
-        let anoSalario = salarioMinimo[indice].ano;
-        let valorSalario = salarioMinimo[indice].salario.toFixed(2).replace(".",",");
+anoLabel = anoLabel.padEnd(30,'.');
+salarioLabel = salarioLabel.padEnd(30,'.');
+crescimentoLabel = crescimentoLabel.padEnd(30,'.');
+ipcaLabel = ipcaLabel.padEnd(30,'.');
 
+switch(escolha)
+{
+    case 1:
+        for(let i = 0; i < salarioMinimo.length; i++) {
+            let ano = salarioMinimo[i].ano;
+            let salario = salarioMinimo[i].salario;
 
-        console.log("\nAno:".padEnd(30,'.') + anoSalario + "\nSalário mímimo:".padEnd(30,'.') +"R$ "+ valorSalario + "\n");
-    }
+            let salarioFormatado = salario.toFixed(2).replace(".",",");
 
+            console.log("\n");
+            console.log(anoLabel+ano);
+            console.log(salarioLabel+"R$ "+salarioFormatado);
+        }
+        break;
+    case 2:
+        for(let i = 0; i < inflacao.length; i++) {
+            let ano = inflacao[i].ano;
+            let ipca = inflacao[i].ipca;
 
-} else if (opcao == 2) {
+            let ipcaFormatado = ipca.toFixed(2).replace(".",",");
 
-    console.log("\nValores da inflação IPCA entre 2010 e 2020");
-    
-    for(let indice = 0; indice < salarioMinimo.length; indice++) {
+            console.log("\n");
+            console.log(anoLabel+ano);
+            console.log(ipcaLabel+ipcaFormatado+"%");
+        }
+        break;
+    case 3:
+        for(let i = 0; i < salarioMinimo.length; i++) {
+            let ano = salarioMinimo[i].ano;
+            let salario = salarioMinimo[i].salario;
+            let percentualCrescimento;
+            let crescimentoFormatado;
 
-        let anoInflacao = inflacao[indice].ano;
-        let valorInflacao = inflacao[indice].ipca;
+            if(i > 0) {
+                let salarioAnterior = salarioMinimo[i-1].salario;
+                let diferenca = salario - salarioAnterior;
 
+                percentualCrescimento = (diferenca / salarioAnterior) * 100;
 
-        console.log("\nAno:".padEnd(30,'.') + anoInflacao + "\nInflação IPCA:".padEnd(30,'.')  + valorInflacao +"%\n");
-    }
+                crescimentoFormatado = percentualCrescimento.toFixed(2).replace(".",",")+"%";
+            } else {
+                crescimentoFormatado = "-";
+            }
 
-} else if (opcao == 3) {
+            let ipca = inflacao[i].ipca;
 
-    for(let indice = 0; indice < salarioMinimo.length; indice++) {
+            let salarioFormatado = salario.toFixed(2).replace(".",",");
+            let ipcaFormatado = ipca.toFixed(2).replace(".",",");
 
-        let anoSalario = salarioMinimo[indice].ano;
-        let valorSalario = salarioMinimo[indice].salario.toFixed(2).replace(".",",");
-        let valorInflacao = inflacao[indice].ipca;
-
-        
-
-        console.log("\nAno:".padEnd(30,".") + anoSalario + "\nSalário Mínimo:".padEnd(30,".") + valorSalario + "\nCrescimento Salarial:".padEnd(30,".") + "\nInflação IPCA:".padEnd(30,".") + valorInflacao + "\n");
-
-    }
-
-} else {
-    console.log("OPÇÃO INVÁLIDA!")
+            console.log("\n");
+            console.log(anoLabel+ano);
+            console.log(salarioLabel+"R$ "+salarioFormatado);
+            console.log(crescimentoLabel+crescimentoFormatado);
+            console.log(ipcaLabel+ipcaFormatado+"%");
+        }
+        break;
+    default:
+        console.log("Opção Inválida!");
+        break;
 }
