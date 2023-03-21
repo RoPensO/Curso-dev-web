@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    height: 100vh;
+}
+
+.topo {
+    text-align: start;
+    background-color: #20232a;
+    color: #61dafb;
+    font-size: 25px;
+    padding: 0 15px;   
+}
+.topo p {
+    margin-left: 50px;
+}
+
+.banner {
+    background-color: #282c34;
+    color: white;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.banner h1 {
+
+}
+.banner p {
+    margin: 30px;
+}
+.banner a {
+    background-color: #61dafb;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.requesitos h1 {
+    margin: 20px auto;
+}
+.requesitos p {
+    margin-bottom: 20px;
+}
+.cards {
+    display: flex;
+    margin: auto;
+    max-width: 1024px;
+}
+
+.card {
+    width: calc(100%/3);
+    margin: 5px;
+    background-color: lightgrey;
+    margin: 30px 10px;
+}
+.card h3 {
+    color: yellow;
+    font-size: 20px;
+    margin: 20px 0;
+}
+.card p {
+    padding: 10px;
+    color: white;
+    background-color: darkgray;
+}
+
+
+footer {
+    height: 40px;
+    background-color: lightyellow;
+}
+footer p {
+    color: #20232a;
+    font-size: 18px;
+    padding: 10px;
+}
