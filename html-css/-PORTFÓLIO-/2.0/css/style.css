@@ -23,14 +23,7 @@ section {
     height: 100vh;
 }
 
-/* .fundo {
-    width: 100%;
-    height: 60px;
-    background-color: var(--fundo);
-    filter: blur(10);
-    position: fixed;
-    backdrop-filter: blur(10px);
-} */
+
 .topo {
     display: flex;
     align-items: center;
@@ -64,16 +57,22 @@ section {
     justify-content: space-around;
 }
 .menu nav a {
-    text-align: center;
+    width: calc(100%/4);
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60px;
-    width: calc(100%/4);
-    color: white;
     text-decoration: none;
+    color: white;
     text-transform: uppercase;
+    position: relative;
 }
+.menu nav a:hover {
+    height: 70px;
+    position: relative;
+    bottom: 10px;
+}
+
 
 .menu nav a:nth-child(1) {
     background-color: var(--azul-escuro);
@@ -108,15 +107,14 @@ section {
     font-size: 50px;
 }
 button {
-    margin-top: 20px;
-    padding: 15px 30px;
-    background-color: var(--azul-claro);
+    margin-top: 50px;
     border: none;
-    border-radius: 6px;
 }
 button a {
+    padding: 15px 25px;
+    background-color: var(--azul-claro);
+    border-radius: 6px;
     text-decoration: none;
-    font-size: 12px;
     letter-spacing: 3px;
     color: white;
     text-transform: uppercase;
