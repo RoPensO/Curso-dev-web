@@ -1,10 +1,10 @@
-
+import "./estilo.css"
 
 function Produtos() {
     return (
-      <section>
-        <div className="produtos">
-            <h2>Nossos produtos</h2>
+      <section id="Produtos">
+        <div className="produtos limite">
+            <h3>Nossos produtos</h3>
             <p>Trabalhamos com óculos de grau, óculos de sol, lentes transition nos modelos masculino, feminino e infantil.</p>
             <p>Todos os nossos preços são acessíveis e contam com a melhor qualidade do mercado.</p>
             
@@ -33,7 +33,7 @@ function Produtos() {
 
             </div>
 
-            <p>Todos os nossos produtos incluem:</p>
+            <p className="subtitulo">Todos os nossos produtos incluem:</p>
             <ul>
                 <li>Garantia de 1 ano</li>
                 <li>Manutenção preventiva</li>

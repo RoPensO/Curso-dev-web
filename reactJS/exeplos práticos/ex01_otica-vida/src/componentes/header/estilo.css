@@ -1,0 +1,38 @@
+header {
+    padding: 10px 25px;
+}
+
+header div {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div img {
+    width: 150px;
+}
+
+header div nav a {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px;
+    margin: 5px;
+}
+
+
+@media (max-width: 550px) {
+    header div {
+        flex-direction: column;
+    }
+    header div img {
+        padding: 10px;
+    }
+    header div nav {
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid #aaadaf;
+    }
+}

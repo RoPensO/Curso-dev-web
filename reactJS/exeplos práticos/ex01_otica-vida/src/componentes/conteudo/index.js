@@ -1,7 +1,7 @@
-import Banner from './banner';
-import Produtos from './produtos';
-import Sobre from './sobre';
-import Contato from './contatos';
+import Banner from '../SessaoBanner';
+import Produtos from '../SessaoProdutos';
+import Sobre from '../SessaoSobre';
+import Contato from '../SessaoContatos';
 
 function Conteudo() {
     return (

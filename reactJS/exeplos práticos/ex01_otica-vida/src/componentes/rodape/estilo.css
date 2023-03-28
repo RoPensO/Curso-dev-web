@@ -1,0 +1,15 @@
+footer {
+    background-color: #030303;
+}
+
+footer div {
+    width: 100%;
+}
+footer p {
+    padding: 30px;
+    color: #ADADAD;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}

@@ -1,9 +1,9 @@
-
+import "./estilo.css"
 
 function Header() {
   return (
     <header>
-      <div>
+      <div className="limite">
         
         <img src="assets/imagens/logo.png" alt="imagem óculos a esquerda e nome da ótica a esquerda" />
 

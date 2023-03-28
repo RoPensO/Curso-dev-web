@@ -1,9 +1,9 @@
-
+import "./estilo.css"
 
 function Banner() {
     return (
-      <section>
-        <div className="banner">
+      <section className="capa">
+        <div className="banner limite">
             <p>Preços baixos e</p>
             <h1>Óculos de grau e de sol</h1>
             <p>Você só encontra aqui</p>
