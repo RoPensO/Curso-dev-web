@@ -12,10 +12,11 @@ body {
     width: 100%;
     background-image: url(../imagens/praia_bg.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .topo {
-    width: 1200px;
+    max-width: 1200px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -55,7 +56,7 @@ nav a {
 
 
 section {
-    width: 1024px;
+    max-width: 1024px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -63,6 +64,7 @@ section {
 
 .textos, .formulario {
     width: calc(100%/2);
+    margin: 0 20px;
 }
 .textos {
     height: 490px;
@@ -110,7 +112,7 @@ section {
 .inputs {
     border-radius: 30px;
     padding: 50px;
-    width: 450px;
+    width: auto;
     height: 400px;
     background-color: white;
     display: flex;
@@ -139,4 +141,62 @@ button {
     font-size: 20px;
     font-weight: 600;
     cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    nav a {
+        margin-right: 50px;
+    }
+    .textos {
+        height: 450px;
+        justify-content: space-around;
+    }
+    .textos h1 {
+        font-size: 50px;
+    }
+    .textos p {
+        font-size: 20px;
+    }
+    input {
+        font-size: 16px;
+    }
+}
+@media (max-width: 520px) {
+    body {
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .topo {
+        padding: 0 20px;
+    }
+    nav a {
+        margin-right: 20px;
+    }
+    .menu nav {
+        display: none
+    }
+    .menu img {
+        height: 50px;
+        border: 3px solid white;
+    }
+    section {
+        flex-direction: column;
+
+    }
+    .textos, .formulario {
+        width: 100%;
+        height: 70vh;
+        text-align: center;
+        justify-content: space-between;
+        margin: 20px 0;
+    }
+    .textos a {
+        width: 70%;
+        margin: auto;
+    }
+    .inputs {
+        width: 90%;
+        margin: auto;
+        height: 100%;
+    }
 }
