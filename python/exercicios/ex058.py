@@ -1,7 +1,7 @@
 from random import randint
 pc = randint(1, 10)
 tentativas = 0
-acertou = False
+acertou = 0
 
 print('Estou pensando em um número entre 1 e 10, tente acertar.')
     
