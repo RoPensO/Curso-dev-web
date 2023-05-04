@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+    background-color: #fff;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.685);
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+.menu {
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    height: 40px;
+}
+.logo img {
+    height: 100%;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+}
+.login, .botao {
+    padding: 15px 55px;
+    background-color: #2eb12e;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.login a, .botao a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+
+
+.banner {
+    height: 70vh;
+    background-image: url(../imagens/home-banner-lg_v1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -100px;
+    text-align: center;
+}
+.banner-texto {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    top: 10%;
+}
+.banner-texto h1 {
+    font-size: 60px;
+}
+.banner-texto p {
+    padding: 20px 0;
+}
+.botao {
+    width: 50px;
+    margin: auto;
+}
+
+
+
+.funcionamento {
+    width: 1024px;
+    margin: 50px auto;
+}
+.funcionamento h2 {
+    text-align: center;
+}
+.funcionamento-container {
+    display: flex;
+}
+.funcionamento-box {
+    width: calc(100%/ 3);
+    text-align: center;
+    margin: 10px;
+    padding: 25px;
+}
+.funcionamento-box img {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+}
+.funcionamento-box h3 {
+    margin: 15px;
+}
+
+
+
+.cardapio {
+    width: 1024px;
+    margin: auto;
+    text-align: center;
+}
+.cardapio h2 {
+    text-align: center;
+    margin: 30px;
+}
+.cardapio-container {
+    display: flex;
+}
+.cardapio-box {
+    width: calc(100%/5);
+    margin: 20px 5px;
+}
+figure img {
+    width: 100%;
+    border-radius: 15px;
+}
+figcaption {
+    text-align: start;
+    width: 75%;
+    position: relative;
+    bottom: 25px;
+    left: 20px;
+    background-color: #fff;
+    padding: 10px 15px;
+    border-radius: 15px 0 0 15px;
+}
+.cardapio a {
+    justify-content: center;
+    padding: 20px 30px;
+    background-color: #2eb12e;
+    text-decoration: none;
+    color: white;
+    border-radius: 16px;
+    font-weight: bold;
+}
+
+.assine {
+    height: 40vh;
+    background-image: url(../imagens/Secondary+image+\(1\).png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.box_assinatura {
+    background-color: #fff;
+}
