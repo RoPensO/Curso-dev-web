@@ -1,0 +1,60 @@
+.banner { 
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(249, 219, 121);
+    background-image: url(../../../public/assets/banner-home.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+}
+.banner h1 {
+    text-align: center;
+    font-size: 80px;
+    color: white;
+    filter: drop-shadow( 2px 2px 1px black);
+}
+
+.sabores, .eventos, .sobre {
+    display: flex;
+}
+.imagem, .textos {
+    width: 50%;
+}
+.imagem img {
+    width: 100%;
+    height: 100%;
+}
+.textos {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.textos span {
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.textos p {
+    width: 400px;
+    margin: 0 auto;
+    text-align: start;
+}
+
+@media (max-width: 768px) {
+
+    .sabores, .eventos, .sobre {
+        flex-direction: column;
+    }
+    .textos, .imagem {
+        width: 100%;
+    }
+    .textos {
+        margin: 50px 0;
+    }
+    .eventos {
+        flex-direction: column-reverse;
+    }
+}

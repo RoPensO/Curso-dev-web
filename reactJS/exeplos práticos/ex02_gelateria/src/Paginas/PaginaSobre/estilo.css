@@ -1,0 +1,57 @@
+.banner-sobre { 
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../../../public/assets/banner-sobre.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+}
+.banner-sobre h1 {
+    text-align: center;
+    font-size: 80px;
+    color: white;
+    filter: drop-shadow( 2px 2px 1px black);
+}
+
+
+.sobre-nos {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+}
+.sobre-nos span {
+    font-style: italic;
+    font-weight: bold;
+}
+.sobre-textos {
+    text-align: center;
+    margin: 20px auto;
+}
+.sobre-textos p {
+    margin: 10px;
+}
+
+
+.sobre-fotos {
+    display: flex;
+}
+.sobre-fotos > figure {
+    margin-top: 30px;
+    width: 50%;
+    height: 400px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+
+@media (max-width: 625px) {
+    .sobre-fotos {
+        flex-direction: column;
+    }
+    .sobre-fotos > figure {
+        width: 100%;
+        object-fit: cover;
+    }   
+}

@@ -1,0 +1,35 @@
+footer {
+    padding: 50px;
+    width: 100%;
+    background-color: #000;
+    color: white;
+}
+.infos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bloco_rodape {
+    width: calc(100%/4);
+}
+.infos figure {
+    height: 150px;
+}
+.infos figure img {
+    height: 100%;
+}
+footer > p {
+    text-align: center;
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    .infos {
+        flex-direction: column;
+    }
+    .bloco_rodape {
+        width: 100%;
+        text-align: center;
+        margin: 20px;
+    }
+}

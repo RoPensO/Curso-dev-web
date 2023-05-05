@@ -1,4 +1,4 @@
-import './App.css';
+import './estilo.css';
 
 import Topo from '../../componentes/Topo';
 import Rodape from '../../componentes/Rodape';
@@ -14,10 +14,10 @@ function PaginaInicial() {
             <h1>SORVETE ARTESANAL</h1>
           </div>
         </section>
-        <section>
-          <figure>
+        <section className='sabores'>
+          <div class="imagem">
             <img src="../../assets/banner-sabores.jpg" alt="sorvete de perto"/>
-          </figure>
+          </div>
           <div class="textos">
             <h2>NOSSOS SABORES</h2>
             <span>Novos e deliciosos!</span>
@@ -25,21 +25,20 @@ function PaginaInicial() {
             </p>
           </div>
         </section>
-        <section>
+        <section className='eventos'>
           <div class="textos">
             <h2>NOSSOS EVENTOS</h2>
             <span>Delicias com sorvete!</span>
             <p>Mais do que uma sorveteria, uma extensão de sua casa! Estamos aqui prontinhos para te atender e oferecer os melhores eventos com os melhores sorvetes da sua vida! Venha nos conhecer e passar um tempo aqui com a gente.</p>
           </div>
-          <figure>
+          <div class="imagem">
             <img src="../../assets/eventos-image.jpg" alt="evento sorvete"/>
-          </figure>
+          </div>
         </section>
-
-        <section>
-          <figure>
+        <section className='sobre'>
+          <div class="imagem">
             <img src="../../assets/sobre-image.jpg" alt="pessoas com sorvete"/>
-          </figure>
+          </div>
           <div class="textos">
             <h2>SOBRE NÓS</h2>
             <span>Alegria em cada casquinha!</span>

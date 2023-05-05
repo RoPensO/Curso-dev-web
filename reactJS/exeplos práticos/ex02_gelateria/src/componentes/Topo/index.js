@@ -5,13 +5,12 @@ import './topo.css'
 function Topo() {
     return (
         <header>
-            <div>
+            <div className='limite'>
                 <img src="./assets/logo.png" alt="Logo"/>
-                
                 <nav>
-                    <Link to='/'>Home</Link>
-                    <Link to='/sabores'>Sabores</Link>
-                    <Link to='/sobre'>Sobre</Link>
+                    <Link className='link-topo' to='/'>Home</Link>
+                    <Link className="link-topo" to='/sabores'>Sabores</Link>
+                    <Link className="link-topo" to='/sobre'>Sobre</Link>
                 </nav>
             </div>
         </header>
