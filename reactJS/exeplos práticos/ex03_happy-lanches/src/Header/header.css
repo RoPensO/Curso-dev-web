@@ -1,0 +1,19 @@
+.topo {
+    position: sticky;
+    top: 0px;
+    background-color: #fff;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px;
+
+}
+.logo span {
+    font-size: 20px;
+    color: #3fc360;
+    position: relative;
+    top: 15px;
+}

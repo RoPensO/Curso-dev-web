@@ -1,34 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-main {
-    background-color: #f0f0f0;
-}
-.limite {
-    max-width: 1024px;
-    margin: auto;
-}
-
-.logo {
-    display: flex;
-    justify-content: center;
-    font-weight: bold;
-    font-size: 30px;
-    padding: 10px;
-}
-.logo span {
-    font-size: 20px;
-    color: #3fc360;
-    position: relative;
-    top: 15px;
-}
-
 .cards {
     display: flex;
     flex-flow: wrap;
