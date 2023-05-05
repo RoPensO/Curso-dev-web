@@ -1,0 +1,148 @@
+/* banner */
+.banner {
+    background-color: var(--azul-principal);
+}
+.conteudo-banner {
+    height: 600px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.banner-txt h2 {
+    font-size: 30px;
+    margin: 20px 0;
+    line-height: 40px;
+    font-weight: bolder;
+}
+.banner-txt p {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 100;
+}
+
+
+/* anuncio 1 */
+.anuncio1 {
+    background-color: var(--azul-escuro);
+}
+.anuncio {
+    height: 130px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.conteudo-anuncio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.anuncio-txt p {
+    margin-top: 10px;
+}
+.botao1, .botao2  {
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+}
+.botao1::before, .botao2::before {
+    content: url(../../../public/assets/icone-foguete.png);
+    margin-right: 10px;
+    position: relative;
+    top: 3px;
+}
+.botao1 {
+    background-color: var(--azul-principal);
+}
+
+
+/* informações */
+.conteudo-informacoes {
+    margin-top: 80px;
+}
+.titulo h2 {
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+}
+.infos-bloco {
+    display: flex;
+    margin: 50px 0;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.info img {
+    height: 80px;
+}
+.info h2 {
+    font-size: 20px;
+    margin: 20px 0;
+}
+.info p {
+    font-size: 18px;
+}
+
+
+/* tabela de planos */
+.tabela_planos {
+    background-color: var(--cinza-claro);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} 
+.conteudo-tabela {
+    margin-top: 50px;
+}
+
+/* tabela */
+.tabela {
+    max-width: 1024px;
+    text-align: center;
+    margin: 80px auto;
+    background-color: #fff;
+    box-shadow: 0 3px 25px 8px rgba(47, 134, 214, 1);
+    border-radius: 5px;
+}
+table {
+    width: 100%;
+}
+thead th h3 {
+    text-transform: uppercase;
+    margin: 15px;
+}
+thead th p {
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: grey;
+}
+tbody tr {
+    height: 50px;
+    font-weight: bold;
+}
+.corpo-tabela td:hover {
+    background-color: var(--azul-principal);
+    color: white;
+    cursor: pointer;
+}
+.imagem-tabela {
+    height: 100px;
+}
+.tabela tbody tr:nth-child(odd) {
+    background-color: var(--cinza-claro);
+}
+
+
+/* anuncio 2 */
+.anuncio2 {
+    background-color: var(--azul-principal);
+}
+.botao2 {
+    background-color: var(--azul-escuro);
+}

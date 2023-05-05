@@ -1,0 +1,52 @@
+.ponto {
+    height: 20px;
+    width: 20px;
+    background-color: var(--azul-principal);
+    border-radius: 50%;
+    position: relative;
+    left: calc(50% - 10px);
+}
+
+.bg {
+    padding: 50px;
+    width: 100%;
+    background-color: var(--azul-principal);
+}
+/* tabela */
+.tabela-preco {
+    margin: 80px 0;
+    background-color: #fff;
+}
+.titulo-tabela {
+    background-color: var(--cinza-medio);
+    height: 80px;
+}
+.titulo-tabela:hover {
+    background-color: var(--azul-principal);
+    color: white;
+    cursor: pointer;
+}
+.titulo-tabela p {
+    position: relative;
+    top: 20px;
+    font-size: 12px;
+    color: var(--cinza-escuro);
+}
+thead th:nth-child(1) {
+    background-color: #fff;
+}
+thead th h3 {
+    font-size: 30px;
+    font-weight: bolder;
+}
+tbody {
+    height: 100px;
+}
+tbody tr {
+    text-align: center;
+}
+tbody tr td:nth-child(1) {
+    background-color: var(--cinza-claro);
+    font-weight: bold;
+    text-align: start;
+}
