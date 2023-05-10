@@ -1,5 +1,28 @@
-.Menu {
-    max-width: 400px;
+:root {
+    --bg: #0E1629;
+    --bg-blocos: #182343;
+    --bg-botoes: #4D77FF;
+    --verde-destaque: #80E576;
+    --cinza-fonte: #646A7B;
+  }
+
+
+.menu {
+    margin: 0px 20px;
+}
+.logo {
+    margin: 30px;
+}
+.logo span {
+    font-size: 30px;
+}
+.nav-menu {
+    padding: 20px;
+    width: 180px;
+    background-color: var(--bg-blocos);
+    border-radius: 15px;
+    position: sticky;
+    top: 10px;
 }
 nav {
     display: flex;
@@ -8,11 +31,16 @@ nav {
 .link-nav-menu {
     display: flex;
     align-items: center;
-    margin: 10px;
+    margin: 15px;
+    text-decoration: none;
+    color: white;
 }
-nav img {
+.link-nav-menu img {
     height: 15px;
     margin-right: 10px;
     filter: invert(1);
 }
-
+.link:hover {
+    background-color: var(--bg-botoes);
+    border-radius: 10px;
+}

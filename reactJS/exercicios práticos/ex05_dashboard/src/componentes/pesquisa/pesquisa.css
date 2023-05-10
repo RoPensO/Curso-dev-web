@@ -1,0 +1,47 @@
+:root {
+    --bg: #0E1629;
+    --bg-blocos: #182343;
+    --bg-botoes: #4D77FF;
+    --verde-destaque: #80E576;
+    --cinza-fonte: #646A7B;
+}
+
+
+
+.topo-pesquisa {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pesquisa input {
+    width: 200px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 20px 0 0 20px;
+    border: none;
+    background-color: var(--bg-blocos);
+}
+.pesquisa button {
+    height: 40px;
+    border: none;
+    background-color: var(--bg-blocos);
+    border-radius: 0 20px 20px 0;
+    position: relative;
+    top: 15px;
+}
+.pesquisa button img {
+    height: 100%;
+    padding: 10px;
+    filter: invert(1);
+}
+
+.notificacao {
+    height: 30px;
+    position: relative;
+    top: 20px;
+}
+.notificacao img {
+    height: 100%;
+    filter: invert(1);
+}

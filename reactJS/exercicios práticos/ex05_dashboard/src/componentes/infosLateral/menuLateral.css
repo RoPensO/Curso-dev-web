@@ -1,0 +1,90 @@
+:root {
+    --bg: #0E1629;
+    --bg-blocos: #182343;
+    --bg-botoes: #4D77FF;
+    --verde-destaque: #80E576;
+    --cinza-fonte: #646A7B;
+}
+
+.infoLateral {
+    width: 300px;
+    height: 98vh;
+    margin: 5px 10px;
+    background-color: var(--bg-blocos);
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.icone {
+    filter: invert(1);
+    height: 15px;
+}
+.profile {
+    height: 40px;
+    border-radius: 50%;
+}
+
+.info-titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.info-cartao {
+    display: flex;
+    justify-content: space-between;
+}
+.cartao {
+    border-radius: 10px;
+    padding: 20px;
+    height: 100%;
+    width: 90%;
+    background-color: var(--cinza-fonte);
+}
+
+
+.info-tranferencia > input {
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--bg);
+    width: 82%;
+    position: relative;
+    bottom: 9px;
+}
+.info-tranferencia > button {
+    height: 30px;
+    border: none;
+    background-color: var(--bg-botoes);
+    border-radius: 6px;
+    position: relative;
+    left: 15px;
+}
+.info-tranferencia > button > img {
+    height: 100%;
+    padding: 5px;
+}
+
+.contatos-perfil {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box-contato {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: var(--bg);
+    border-radius: 15px;
+}
+.box-contato-texto {
+    position: relative;
+    left: 20%;
+}
+.box-contato-texto span {
+    color: var(--cinza-fonte);
+}
