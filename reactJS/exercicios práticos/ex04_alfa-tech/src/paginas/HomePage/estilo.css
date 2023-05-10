@@ -17,7 +17,7 @@
 .banner-txt p {
     font-size: 20px;
     line-height: 30px;
-    font-weight: 100;
+    font-weight: 300;
 }
 
 
@@ -126,6 +126,7 @@ tbody tr {
     height: 50px;
     font-weight: bold;
 }
+
 .corpo-tabela td:hover {
     background-color: var(--azul-principal);
     color: white;
@@ -137,6 +138,7 @@ tbody tr {
 .tabela tbody tr:nth-child(odd) {
     background-color: var(--cinza-claro);
 }
+
 
 
 /* anuncio 2 */

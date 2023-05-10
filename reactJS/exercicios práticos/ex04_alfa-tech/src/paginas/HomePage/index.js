@@ -66,22 +66,22 @@ function HomePage() {
                                 <th>
                                     <h3>pessoal</h3>
                                     <img src="assets/pessoal-icone.png" class="imagem-tabela" alt="Pessoal"/>
-                                    <p>Indicado para uso pessoal</p>
+                                    <p>Indicado para <br/> uso pessoal</p>
                                 </th>
                                 <th>
                                     <h3>profissional</h3>
                                     <img src="assets/equipe-icone.png" class="imagem-tabela" alt="profissional"/>
-                                    <p>Indicado para uso profissional de T.I.</p>
+                                    <p>Indicado para uso <br/> profissional de T.I.</p>
                                 </th>
                                 <th>
                                     <h3>empresarial</h3>
                                     <img src="assets/empresa-icone.png" class="imagem-tabela" alt="empresarial"/>
-                                    <p>Indicado para empresas</p>
+                                    <p>Indicado para <br/> empresas</p>
                                 </th>
                                 <th>
                                     <h3>big techs</h3>
                                     <img src="assets/big-tech.png" class="imagem-tabela" alt="big tech"/>
-                                    <p>Indicado para grandes empresas</p>
+                                    <p>Indicado para <br/> grandes empresas</p>
                                 </th>
                                 
                             </thead>

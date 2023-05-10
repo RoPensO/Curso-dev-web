@@ -45,8 +45,9 @@ tbody {
 tbody tr {
     text-align: center;
 }
-tbody tr td:nth-child(1) {
+.tabela-preco tr td:nth-child(1) {
     background-color: var(--cinza-claro);
     font-weight: bold;
     text-align: start;
+    padding-left: 10px;
 }
