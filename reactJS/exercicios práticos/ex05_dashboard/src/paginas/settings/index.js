@@ -6,7 +6,7 @@ export default function Settings() {
     return(
         <div className="conteudo">
             <Menu/>
-            <div>
+            <div className="centro">
                 <Pesquisa/>
                 <h1>settings</h1>
             </div>

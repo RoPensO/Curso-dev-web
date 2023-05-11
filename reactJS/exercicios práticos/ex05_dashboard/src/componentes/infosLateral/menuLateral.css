@@ -7,30 +7,20 @@
 }
 
 .infoLateral {
-    width: 300px;
+    min-width: 300px;
     height: 98vh;
     margin: 5px 10px;
     background-color: var(--bg-blocos);
     border-radius: 15px;
-    padding: 20px;
+    padding: 20px 20px 7px 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.icone {
-    filter: invert(1);
-    height: 15px;
-}
-.profile {
-    height: 40px;
-    border-radius: 50%;
-}
 
-.info-titulo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
+.profile {
+    height: 35px;
+    border-radius: 50%;
 }
 
 .info-cartao {
@@ -41,10 +31,25 @@
     border-radius: 10px;
     padding: 20px;
     height: 100%;
-    width: 90%;
+    min-width: 220px;
     background-color: var(--cinza-fonte);
+    z-index: 2;
 }
-
+.cartao-sombra {
+    text-align: end;
+    padding: 10px;
+    min-width: 60px;
+    position: relative;
+    right: 30px;
+    z-index: 0;
+    background-color: var(--bg);
+    border-radius: 10px;
+    cursor: pointer;
+}
+.cartao-sombra:hover {
+    right: 20px;
+    cursor: pointer;
+}
 
 .info-tranferencia > input {
     padding: 10px;
@@ -82,8 +87,7 @@
     border-radius: 15px;
 }
 .box-contato-texto {
-    position: relative;
-    left: 20%;
+    margin-left: 20px;
 }
 .box-contato-texto span {
     color: var(--cinza-fonte);

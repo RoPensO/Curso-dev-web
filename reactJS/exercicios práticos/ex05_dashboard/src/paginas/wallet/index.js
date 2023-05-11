@@ -6,7 +6,7 @@ export default function Wallet() {
     return(
         <div className="conteudo">
             <Menu/>
-            <div>
+            <div className="centro">
                 <Pesquisa/>
                 <h1>wallet</h1>
             </div>

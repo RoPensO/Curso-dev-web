@@ -6,7 +6,7 @@ export default function Profile() {
     return(
         <div className="conteudo">
             <Menu/>
-            <div>
+            <div className="centro">
                 <Pesquisa/>
                 <h1>profile</h1>
             </div>

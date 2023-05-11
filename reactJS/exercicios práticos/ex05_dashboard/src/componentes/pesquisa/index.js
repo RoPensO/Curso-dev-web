@@ -5,10 +5,10 @@ export default function Pesquisa() {
     <div className="topo-pesquisa">
         <div className="pesquisa">
             <input type="text" name="pesquisa" id="pesquisa" placeholder='Pesquisa'/>
-            <button><img src="../../assets/icones/search.png" alt=""/></button>
+            <button><img className='icone' src="../../assets/icones/search.png" alt=""/></button>
         </div>
         <div className="notificacao">
-            <img src="../../assets/icones/notificação(off).png" alt=""/>
+            <img className='icone' src="../../assets/icones/notificação(off).png" alt=""/>
         </div>
     </div>
 );

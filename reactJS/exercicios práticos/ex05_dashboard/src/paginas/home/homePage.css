@@ -1,4 +1,67 @@
-.conteudo {
+:root {
+    --bg: #0E1629;
+    --bg-blocos: #182343;
+    --bg-botoes: #4D77FF;
+    --verde-destaque: #80E576;
+    --cinza-fonte: #646A7B;
+}
+
+
+.transfer > .texto-top > figure, .expenses > .texto-top > figure {
+    background-color: var(--cinza-fonte);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.transfer > .texto-top, .expenses > .texto-top {
+    display: flex;
+    align-items: center;
+}
+
+.container-overview {
     display: flex;
     justify-content: space-between;
+}
+
+.box-overview {
+    background-color: var(--bg-blocos);
+    border-radius: 15px;
+    padding: 15px;
+    height: 280px;
+}
+
+.income-outcome {
+    width: 300px;
+}
+
+.expenses {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.transfer-limit {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.transfer, .limit {
+    height: 46%;
+}
+.transfer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.limit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

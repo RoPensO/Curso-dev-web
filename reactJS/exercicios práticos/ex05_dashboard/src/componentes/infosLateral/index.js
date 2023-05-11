@@ -3,13 +3,13 @@ import './menuLateral.css';
 export default function InfosLateral() {
     return (
         <div className="infoLateral">
-            <div className="nome-user info-titulo">
+            <div className="nome-user titulo">
                 <img className='profile' src="../../assets/pessoas/pessoa1.jpeg" alt=""/>
                 <h3>Kainat Yaqoot</h3>
                 <img className='icone' src="../../assets/icones/down_arrow.png" alt=""/>
             </div>
             <div className="balanco">
-                <div className="info-titulo">
+                <div className="titulo">
                     <h3>Wallet</h3>
                     <img className='icone' src="../../assets/icones/etc.png" alt=""/>
                 </div>
@@ -26,7 +26,7 @@ export default function InfosLateral() {
                 </div>
             </div>
             <div className="info-tranferencia">
-                    <div className="info-titulo">
+                    <div className="titulo">
                         <h3>Quick Transfer</h3>
                         <img className='icone' src="../../assets/icones/etc.png" alt=""/>
                     </div>
@@ -34,7 +34,7 @@ export default function InfosLateral() {
                     <button><img className='icone' src="../../assets/icones/enviar.png" alt=""/></button>
                 </div>
             <div className="contatos">
-                <div className="info-titulo">
+                <div className="titulo">
                     <h3>Contacts</h3>
                 </div>
                 <div className="contatos-perfil">
@@ -46,7 +46,7 @@ export default function InfosLateral() {
                 </div>
             </div>
             <div className="recentes">
-                <div className="info-titulo">
+                <div className="titulo">
                     <h3>Recent</h3>
                     <img className='icone' src="../../assets/icones/down_arrow.png" alt=""/>
                 </div>

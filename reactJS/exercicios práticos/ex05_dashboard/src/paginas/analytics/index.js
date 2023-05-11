@@ -6,7 +6,7 @@ export default function Analytics() {
     return(
         <div className="conteudo">
             <Menu/>
-            <div>
+            <div className="centro">
                 <Pesquisa/>
                 <h1>Analytics</h1>
             </div>
