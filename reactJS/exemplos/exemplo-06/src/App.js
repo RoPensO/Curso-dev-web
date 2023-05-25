@@ -1,4 +1,4 @@
-import PaginaInicial from './componentes/paginaInicial'
+import PaginaInicial from './componentes/paginaInicial';
 import './App.css';
 
 function App() {
