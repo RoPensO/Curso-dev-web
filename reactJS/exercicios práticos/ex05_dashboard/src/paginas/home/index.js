@@ -21,7 +21,7 @@ export default function Home() {
                                 <span>Income</span>
                                 <h3>$15.720</h3>
                             </div>
-                            <div className="texto">
+                            <div className="texto outcome">
                                 <span>Outcome</span>
                                 <h3>$5.720</h3>
                             </div>
@@ -58,6 +58,15 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div className="transacoes">
+                    <div className="titulo">
+                        <h3>Transaction</h3>
+                        <img className="icone" src="../../assets/icones/etc.png" alt="" />
+                    </div>
+                    <div className="lista-transacoes">
+                        
                     </div>
                 </div>
             </div>

@@ -6,7 +6,12 @@
     --cinza-fonte: #646A7B;
 }
 
-
+.overview {
+    margin: 20px 0;
+}
+.texto {
+    letter-spacing: 2px;
+}
 .transfer > .texto-top > figure, .expenses > .texto-top > figure {
     background-color: var(--cinza-fonte);
     width: 30px;
@@ -35,8 +40,16 @@
     height: 280px;
 }
 
+.texto h3 {
+    font-size: 25px;
+    margin-top: 5px;
+}
 .income-outcome {
     width: 300px;
+}
+.outcome {
+    position: relative;
+    top: 20%;
 }
 
 .expenses {
@@ -65,3 +78,26 @@
     align-items: center;
     justify-content: center;
 }
+
+.limit > .texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 105px;
+    width: 105px;
+    border: 2px solid greenyellow;
+    border-radius: 50%;
+}
+.limit > .texto h3, .texto-top h3 {
+    font-size: 30px;
+    margin-right: 5px;
+}
+.limit > .texto span {
+    font-size: 14px;
+}
+
+
+
+
+/* lista */

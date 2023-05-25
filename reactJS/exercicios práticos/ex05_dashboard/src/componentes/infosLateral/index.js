@@ -16,8 +16,10 @@ export default function InfosLateral() {
                 <div className="info-cartao">
                     <div className="cartao">
                         <h3>VISA</h3>
-                        <p>active Balance</p>
-                        <h3>$445.720</h3>
+                        <div className="centro">
+                            <p>active Balance</p>
+                            <h3>$445.720</h3>
+                        </div>
                         <p>F A Lexandra</p>
                     </div>
                     <div className="cartao-sombra">
@@ -39,9 +41,9 @@ export default function InfosLateral() {
                 </div>
                 <div className="contatos-perfil">
                     <img className='profile' src="../../assets/pessoas/pessoa2.jpeg" alt=""/>
+                    <img className='profile' src="../../assets/pessoas/pessoa5.jpeg" alt=""/>
                     <img className='profile' src="../../assets/pessoas/pessoa3.jpeg" alt=""/>
                     <img className='profile' src="../../assets/pessoas/pessoa4.jpeg" alt=""/>
-                    <img className='profile' src="../../assets/pessoas/pessoa5.jpeg" alt=""/>
                     <img className='profile' src="../../assets/pessoas/pessoa6.jpeg" alt=""/>
                 </div>
             </div>

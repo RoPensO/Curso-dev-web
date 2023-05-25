@@ -21,6 +21,7 @@
 .profile {
     height: 35px;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .info-cartao {
@@ -29,11 +30,17 @@
 }
 .cartao {
     border-radius: 10px;
-    padding: 20px;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     height: 100%;
     min-width: 220px;
-    background-color: var(--cinza-fonte);
+    background-image: conic-gradient(var(--bg-blocos), rgb(57, 1, 187),var(--bg-botoes), rgb(0, 58, 97), var(--bg-blocos));
     z-index: 2;
+}
+.cartao > .centro {
+    margin: 20px 0;
 }
 .cartao-sombra {
     text-align: end;
@@ -76,6 +83,11 @@
 .contatos-perfil {
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
+}
+.contatos-perfil img:hover {
+    transform: scale(1.2);
+    border-radius: 10px;
 }
 
 .box-contato {
@@ -85,10 +97,11 @@
     padding: 10px;
     background-color: var(--bg);
     border-radius: 15px;
+    cursor: pointer;
+}
+.box-contato:hover {
+    background-color: var(--bg-botoes);
 }
 .box-contato-texto {
     margin-left: 20px;
-}
-.box-contato-texto span {
-    color: var(--cinza-fonte);
 }
