@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* font-family: 'Great Vibes', cursive;
+font-family: 'Poppins', sans-serif; */
+
+:root {
+  --dourado: #B2987d;
+  --bg-dark: #252323;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}

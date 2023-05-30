@@ -1,0 +1,80 @@
+.tema-claro {
+    background-color: #fff;
+    color: var(--bg-dark);
+    height: 100vh;
+}
+.tema-escuro {
+    background-color: var(--bg-dark);
+    color: #fff;
+    height: 100vh;
+}
+
+.limite {
+    max-width: 1024px;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* TOPO */
+.topo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.topo img {
+    height: 100px;
+}
+button {
+    border: 1px solid var(--dourado);
+    background-color: transparent;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.btn {
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+}
+.btn img {
+    height: 100%;
+    padding: 5px;
+}
+.btn p {
+    padding: 5px;
+}
+
+
+/* BANNER */
+.banner {
+    background-image: url('../../public/banner-barbearia.jpg');
+    height: 250px;
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center -130px;
+}
+
+
+/* INFORMAÇÕES */
+.informacoes {
+    text-align: center;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+.informacoes p {
+    margin: 20px 0;
+}
+.informacoes p:nth-child(2) {
+    font-weight: bold;
+}
+
+.assinatura {
+    font-family: 'Great Vibes', cursive;
+    font-size: 40px;
+    color: var(--dourado);
+}
+
+
+/* RESPONSIVO */
