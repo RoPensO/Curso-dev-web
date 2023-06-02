@@ -10,7 +10,7 @@ pyautogui.press('enter')
 
 # pesquisa e copia da imagem
 time.sleep(2)
-pyautogui.write('bom dia quinta')
+pyautogui.write('bom dia sexta-feira')
 pyautogui.press('enter')
 time.sleep(2)
 pyautogui.click(pyautogui.position(x=300, y=394))
