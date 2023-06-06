@@ -20,7 +20,7 @@ pyautogui.click(pyautogui.position(x=1044, y=322))
 # envio no whatsapp do opera gx
 time.sleep(2)
 pyautogui.click(pyautogui.position(x=13, y=220))
-time.sleep(5)
+time.sleep(10)
 pyautogui.click(pyautogui.position(x=232, y=256))
 pyautogui.hotkey('ctrl', 'v')
 pyautogui.write('queriam mensagem automatizada de bom dia? TOMEM! kkkkkkkkkk')
