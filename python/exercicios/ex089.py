@@ -14,4 +14,4 @@ while True:
     novo_aluno = str(input('Adicionar outro aluno? [s/n] '))
     if novo_aluno in 'nN':
         break
-    
+print(turma[0][0])

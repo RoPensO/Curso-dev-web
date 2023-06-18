@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    max-width: 1300px;
+    margin: auto;
+}
+
+/* HEADER */
+.topo {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+.topo > .logo {
+    font-weight: bolder;
+    font-size: 20px ;
+}
+nav {
+    position: relative;
+    right: 80px;
+}
+nav a {
+    margin-right: 30px;
+    text-decoration: none;
+    color: black;
+}
+button {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 30px;
+    color: rgb(4, 4, 179);
+    background-color: rgb(196, 240, 255);
+    text-transform: capitalize;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+/* BANNER */
+.banner {
+    display: flex;
+    height: 600px;
+}
+.esq {
+    width: 75%;
+    background-color: darkcyan;
+    background-image: url(../imagens/assets/photo-1580927752452-89d86da3fa0a.jpg);
+    background-position: -200px -200px;
+    border-radius: 30px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 40px;
+}
+.esq > .texto p {
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.esq > .texto h1 {
+    width: 600px;
+    font-size: 40px;
+}
+.esq > button {
+    position: relative;
+    bottom: 40px;
+    right: 30px;
+}
+
+.dir {
+    width: 25%;
+    height: 100%;
+    margin: 0 30px;
+}
+.dir > .img-cima {
+    height: 75%;
+    border-radius: 30px;
+    background-image: url(../imagens/assets/free-Isometric-Laptop-Mockup-960x640.jpg);
+    background-position: -180px 0;
+    background-size: cover;
+    margin-bottom: 40px;
+}
+.dir > .subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.icone {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    border: 2px solid black;
+}
+.icone img {
+    height: 20px;
+    position: relative;
+    left: 1px;
+}
+
+
+/* EMPRESAS */
+.empresas figure {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+    padding: 0 10px;
+}
+.empresas figure img {
+    height: 50px;
+    filter: grayscale();
+    cursor: pointer;
+}
+.empresas figure img:hover {
+    filter: none;
+}
+
+
+/* APRESENTAÇÃO */
+.apresentacao {
+    padding: 0 25px;
+}
+.tit-present {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    height: 200px;
+}
+.titulo, .texto_lateral {
+    width: calc(100% / 2.3);
+}
+.titulo p {
+    font-size: 14px;
+}
+.titulo h2 {
+    font-size: 33px;
+}
+
+.texto_lateral {
+    position: relative;
+    top: 30px;
+}
+.texto_lateral p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 30px;
+}
+
+/* BOX APRESENTAÇÃO */
+.box-present {
+    display: flex;
+    justify-content: space-between;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 3.1);
+    margin: 0 10px 40px;
+}
+.box figure {
+    width: 100%;
+    height: 300px;
+    border-radius: 30px;
+    overflow: hidden;
+    background-color: aqua;
+}
+.box figure img {
+    object-fit: cover;
+    object-position: 0 -35px;
+    width: 100%;
+}
+.box:nth-child(2) figure img {
+    object-position: 0 -183px;
+}
+.box > .descricao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 20px 10px 0;
+}
+.box > .texto {
+    display: flex;
+    flex-direction: column;
+}
+.box > .descricao > .texto h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.box > .descricao > .texto p {
+    font-size: 14px;
+}
+
+
+/* TRABALHOS */
+.box-trabalhos {
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+}
+.trabalhos {
+    padding: 50px;
+}
+.trabalhos > .titulo {
+    text-align: center;
+    margin: auto;
+    width: 60%;
+}
+.trabalhos > .titulo p {
+    text-transform: uppercase;
+}
+.trabalhos > .titulo h2 {
+    text-align: center;
+    margin: 30px 0;
+}
+.linha-trab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.linha-trab figure {
+    height: 300px;
+    width: 30%;
+    overflow: hidden;
+    border-radius: 30px;
+    margin: 15px;
+}
+.linha-trab figure img {
+    width: 100%;
+}
+.linha-trab > .desc-trab {
+    width: 500px;
+    margin: 30px;
+}
+.linha-trab > .desc-trab p {
+    margin: 20px 0;
+    width: 100%;
+    text-align: justify;
+}
+
+
+/* SOBRE NÓS */
+.sobre {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.info-sobre, .foto-sobre {
+    width: calc(100%/2);
+    height: 700px;
+}
+.info-sobre {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.info-sobre > .titulo {
+    width: 75%;
+}
+.info-sobre > .titulo p:nth-child(1) {
+    text-transform: uppercase;
+}
+.info-sobre > .titulo p:nth-child(3) {
+    margin: 20px 0;
+}
+
+.stats-sobre {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.stats-sobre > .stat {
+    margin: 30px;
+    text-align: center;
+}
+.stats-sobre > .stat h2 {
+    font-size: 35px;
+}
+.stats-sobre > .stat p {
+    font-size: 15px;
+}
+
+.foto-sobre figure {
+    height: 100%;
+    width: 98%;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.foto-sobre figure img {
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* TESTEMUNHOS */
+.container-end-page {
+    display: flex;
+    align-items: end;
+    padding: 30px;
+}
+.testemunhos > .titulo p:nth-child(1) {
+    text-transform: uppercase;
+}
+.testemunhos > .titulo h2 {
+    width: 600px;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+.box-testemunho {
+    padding: 40px;
+    border: 2px solid #a9a9a983;
+    border-radius: 30px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.box-testemunho > p {
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+.box-testemunho > .assinatura {
+    display: flex;
+}
+.box-testemunho > .assinatura figure {
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    border-radius: 30px;
+    margin-right: 15px;
+}
+.box-testemunho > .assinatura figure img {
+    height: 100%;
+    object-position: -12px;
+}
+
+
+/* ORÇAMENTO */
+.box-orcamento {
+    position: relative;
+    right: 170px;
+    bottom: 20px;
+    background-color: #0061fe;
+    padding: 20px;
+    color: white;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.box-orcamento h2 {
+    margin-bottom: 30px;
+}
