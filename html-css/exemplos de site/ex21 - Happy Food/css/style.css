@@ -6,6 +6,10 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+html {
+    scroll-padding-top: 100px;
+}
+
 header {
     background-color: #fff;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.685);
@@ -14,7 +18,7 @@ header {
     z-index: 1;
 }
 .menu {
-    padding: 20px 30px;
+    padding: 10px 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,7 +33,12 @@ header {
 nav a {
     margin-left: 20px;
     text-decoration: none;
-    color: black;
+    color: #353535;
+    font-weight: bold;
+}
+nav a:hover {
+    border-bottom: 25px solid #2eb12e;
+    color: #2eb12e;
 }
 .login, .botao {
     padding: 15px 55px;
@@ -64,10 +73,12 @@ nav a {
 }
 .banner-texto h1 {
     font-size: 70px;
+    color: #353535;
 }
 .banner-texto p {
     padding: 20px 0;
     font-size: 25px;
+    color: #353535;
 }
 .banner-texto > .botao {
     width: 100px;
@@ -76,25 +87,26 @@ nav a {
 
 
 .funcionamento {
-    width: 1024px;
+    max-width: 1024px;
     margin: 50px auto;
+    color: #353535;
 }
 .funcionamento h2 {
     text-align: center;
 }
 .funcionamento-container {
-    display: flex;
+    columns: 3;
 }
 .funcionamento-box {
-    width: calc(100%/ 3);
     text-align: center;
     margin: 10px;
-    padding: 25px;
+    padding: 20px;
 }
 .funcionamento-box img {
     width: 100%;
     height: 100px;
     padding: 10px;
+    opacity: 0.5;
 }
 .funcionamento-box h3 {
     margin: 15px;
@@ -103,10 +115,11 @@ nav a {
 
 
 .cardapio {
-    width: 1024px;
+    max-width: 1024px;
     margin: auto;
     text-align: center;
     margin-bottom: 100px;
+    color: #353535;
 }
 .cardapio h2 {
     text-align: center;
@@ -114,9 +127,11 @@ nav a {
 }
 .cardapio-container {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 .cardapio-box {
-    width: calc(100%/5);
+    max-width: calc(100%/5.3);
     margin: 20px 5px;
 }
 figure img {
@@ -150,6 +165,7 @@ figcaption {
     display: flex;
     align-items: center;
     justify-content: center;
+    color: #353535;
 }
 .box_assinatura {
     display: flex;
@@ -169,27 +185,40 @@ figcaption {
 
 
 .newsletter {
+    color: #353535;
     display: flex;
     align-items: center;
     height: 40vh;
-    width: 1024px;
+    max-width: 1024px;
     margin: auto;
     text-align: center;
 }
 .inscreva {
     margin: auto;
-    height: 30vh;
+    height: 150px;
     width: 600px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
+.inscreva p {
+    margin: auto;
+    width: 450px;
+    line-height: 20px;
+    margin-bottom: 50px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.form {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 .form input, .form button {
     padding: 15px;
-    margin-top: 30px;
 }
 .form input {
-    width: 400px;
+    width: 300px;
     border: 2px solid #2eb12e;
 }
 .form button {

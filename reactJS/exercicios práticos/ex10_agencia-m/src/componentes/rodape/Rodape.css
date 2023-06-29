@@ -1,0 +1,46 @@
+footer {
+    background-color: var(--dark-bg-full);
+}
+.dark-rodape {
+    background-color: var(--dark-bg-full);
+    color: white;
+}
+
+.rodape {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.rodape img {
+    margin: 50px 0 10px;
+}
+.rodape > p {
+    width: 39%;
+    text-align: center;
+    margin: 30px 0 10px;
+}
+.social img {
+    height: 35px;
+    margin: 30px 5px;
+}
+.assinatura {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    border-top: 1px solid var(--cinza-texto);
+    padding: 20px;
+}
+.assinatura span {
+    font-weight: bold;
+}
+.assinatura span:hover {
+    color: var(--amarelo-hover);
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .rodape p {
+        width: 70%;
+    }
+}

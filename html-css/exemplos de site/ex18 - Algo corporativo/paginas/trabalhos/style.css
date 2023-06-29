@@ -1,0 +1,14 @@
+.titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.titulo {
+    font-size: 30px;
+    margin: 30px auto;
+}
+
+.container-trabalhos {
+    columns: 3;
+}
+

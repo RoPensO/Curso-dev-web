@@ -12,7 +12,9 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
+html {
+    scroll-padding-top: 20px;
+}
 body {
     max-width: 1200px;
     margin: auto;
@@ -34,6 +36,10 @@ body {
 .topo > .menu > .logo {
     font-weight: bolder;
     font-size: 25px;
+}
+.topo > .menu > .logo a {
+    text-decoration: none;
+    color: black;
 }
 .topo > .menu > .logo img {
     height: 30px;

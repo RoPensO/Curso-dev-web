@@ -1,0 +1,36 @@
+.topo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: sticky;
+}
+.dark-icon {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    border: 2px solid var(--cinza-card);
+    border-radius: 30px;
+    padding: 7px;
+}
+img {
+    height: 100%;
+}
+
+
+.topo-dark {
+    background-color: var(--dark-bg-full);
+}
+.topo-dar > .dark-icon {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    border: 2px solid var(--branco-bg-full);
+    border-radius: 30px;
+    padding: 7px;
+}
