@@ -11,6 +11,7 @@
 .site {
     display: flex;
     max-width: 1300px;
+    max-height: 800px;
     height: 100vh;
     margin: auto;
 }
@@ -21,7 +22,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    min-width: 100px;
+    min-width: 50px;
+    max-height: 800px;
     height: 100vh;
     background-color: #fff;
 }
@@ -68,11 +70,11 @@ header nav ul li a:hover {
     cursor: pointer;
 }
 .shop span {
-    font-size: 25px;
+    font-weight: lighter;
+    font-size: 40px;
     color: white;
     position: relative;
-    bottom: 5px;
-    padding: 0 25px;
+    padding: 0 10px;
     cursor: default;
 }
 
@@ -107,6 +109,7 @@ main {
 }
 .esquerdo p {
     width: 70%;
+    font-size: 20px;
     padding-bottom: 20px;
 }
 
@@ -123,18 +126,21 @@ button {
     padding: 10px 50px;
     border: 2px solid white;
     font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
     color: white;
     background: transparent;
     border-radius: 100px;
     cursor: pointer;
 }
 button:hover {
-    box-shadow: 1px 5px 8px #dd8d8657;
+    background-color: #fff;
+    color: rgb(187, 158, 158);
 }
 
 
 
-.galeria {
+figure {
     max-height: 400px;
     max-width: 100%;
     position: relative;
@@ -159,6 +165,7 @@ button:hover {
 .seletores {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .seletor {
     width: 10px;
@@ -166,4 +173,9 @@ button:hover {
     background: white;
     border-radius: 50%;
     margin: 10px 0;
+}
+.selecionado {
+    transform: scale(1.2);
+    border: 2px solid;
+    background-color: transparent;
 }
