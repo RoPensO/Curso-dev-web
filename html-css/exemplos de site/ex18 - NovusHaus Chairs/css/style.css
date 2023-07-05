@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    max-width: 1440px;
+    margin: auto;
+}
+
+.limite {
+    max-width: 1024px;
+    margin: auto;
+}
+
+
+/* header */
+#banner {
+    height: 600px;
+    background-image: url(../assets/sala-preta.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    margin-bottom: 50px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    font-size: 25px;
+    cursor: default;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    padding: 10px;
+}
+header nav {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    padding: 10px;
+}
+header nav a {
+    font-size: 14px;
+    text-transform: capitalize;
+    text-decoration: none;
+    margin: 0px 10px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+header nav a:hover {
+    border-top: 5px solid white;
+    padding: 5px 0;
+}
+
+.end {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+}
+.end span {
+    color: white;
+    margin: 0 10px;
+    padding: 10px 0;
+}
+.user span:hover {
+    color: black;
+}
+
+/* banner */
+.banner {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.banner h1 {
+    text-transform: capitalize;
+    width: 700px;
+    font-size: 60px;
+    line-height: 70px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    padding: 10px;
+}
+.banner p {
+    line-height: 30px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    width: 500px;
+    margin: 30px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.banner input {
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+.banner input::placeholder {
+    color: white;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+}
+
+.abaixo {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 10px;
+    height: 50px;
+    width: 50px;
+}
+.abaixo a span {
+    position: relative;
+    top: 3px;
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+}
+
+
+/* escolhas */
+.escolha {
+    display: flex;
+    margin: 100px auto;
+}
+.escolha-texto {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.titulo h3 {
+    font-size: 50px;
+    text-transform: capitalize;
+}
+.titulo p {
+    font-family: 'poppins', sans-serif;
+    margin: 15px 0;
+    line-height: 30px;
+    width: 90%;
+    font-size: 16px;
+}
+
+.box {
+    margin-bottom: 50px;
+}
+.box-escolhas {
+    columns: 2;
+    margin-top: 50px;
+}
+.box h3 {
+    font-size: 22px;
+    text-transform: capitalize;
+}
+.box p {
+    font-family: 'poppins', sans-serif;
+    margin: 20px 0;
+    font-size: 14px;
+}
+.box figure span {
+    background-color: lightgreen;
+    padding: 5px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+
+.escolha-foto {
+    width: 50%;
+    padding: 30px;
+}
+.escolha-foto figure{
+    height: 600px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.escolha-foto figure img {
+    width: 100%;
+}
+
+
+/* oferta */
+.ofertas {
+    margin-bottom: 150px;
+}
+.linha-1, .linha-2 {
+    max-width: 1440px;
+    height: 250px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.linha-1 .titulo {
+    width: 50%;
+}
+
+.titulo button {
+    background-color: black;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 30px;
+    border: none;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.ofertas figure {
+    width: 500px;
+    margin: 0 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    right: 60px;
+}
+.ofertas figure img {
+    height: 100%;
+    object-fit: contain;
+}
+
+.linha-2 {
+    position: relative;
+    left: 150px;
+    margin: 30px auto;
+}
+.linha-2 figure {
+    overflow: hidden;
+}
+
+
+/* materiais */
+.materiais {
+    max-width: 1440px;
+    display: flex;
+    padding: 0 50px;
+}
+.materiais > .titulo {
+    width: calc(100%/4);
+}
+
+
+.box-cadeiras {
+    height: auto;
+    width: calc(100%/4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-cadeiras img {
+    max-height: 250px;
+    padding: 30px;
+}
+
+.box-cadeiras h4 {
+    font-family: 'poppins', sans-serif;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+
+/* help */
+.help {
+    display: flex;
+}
+.imagens-help, .texto-help {
+    width: calc(100%/2);
+    padding: 20px;
+}
+.help figure img {
+    height: 300px;
+}
+
+
+.texto-help ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.texto-help ul li {
+    width: 45%;
+    margin: 15px;
+    display: flex;
+}
