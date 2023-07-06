@@ -205,6 +205,8 @@ header nav a:hover {
 /* oferta */
 .ofertas {
     margin-bottom: 150px;
+    width: 100vw - 10px;
+    overflow: hidden;
 }
 .linha-1, .linha-2 {
     max-width: 1440px;
@@ -217,7 +219,7 @@ header nav a:hover {
 }
 
 .titulo button {
-    background-color: black;
+    background-color: #292929;
     color: white;
     padding: 10px 30px;
     border-radius: 30px;
@@ -283,13 +285,41 @@ header nav a:hover {
 /* help */
 .help {
     display: flex;
+    margin: 100px 0;
 }
 .imagens-help, .texto-help {
     width: calc(100%/2);
     padding: 20px;
 }
+.help figure {
+    overflow: hidden;
+    height: 500px;
+}
 .help figure img {
-    height: 300px;
+    height: 400px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.575);
+}
+.help figure img:nth-child(1) {
+    position: relative;
+    z-index: 2;
+    left: 20px;
+    top: 20px;
+    width: 300px;
+    object-fit: cover;
+}
+.help figure img:nth-child(2) {
+    height: 280px;
+    position: relative;
+    left: 250px;
+    bottom: 350px;
+    z-index: 2;
+}
+
+.help figure img:nth-child(3) {
+    position: relative;
+    height: 250px;
+    bottom: 450px;
+    left: 220px;
 }
 
 
@@ -300,5 +330,181 @@ header nav a:hover {
 .texto-help ul li {
     width: 45%;
     margin: 15px;
+    font-family: 'poppins', sans-serif;
+}
+
+
+/* depoimentos */
+.depoimentos {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.depoimentos > div > p {
+    text-align: center;
+    font-size: 19px;
+    font-family: 'poppins', sans-serif;
+    margin: 40px 0;
+}
+
+.depoimentos div .user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.depoimentos div .user figure {
+    height: 70px;
+    width: 70px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.depoimentos div .user figure img {
+    height: 100%;
+    position: relative;
+    right: 15px;
+}
+.depoimentos div .user > h4 {
+    font-size: 20px;
+}
+.depoimentos div .user > p {
+    font-family: 'poppins', sans-serif;
+    font-size: 13px;
+}
+
+/* blog */
+.blog {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    margin: 50px 0;
+}
+.blog > .titulo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.blog > .titulo a {
+    color: black;
+}
+.blog > .titulo a p {
+    width: 100%;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.posts-blog {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post {
+    width: 33%;
+    margin: 20px 0;
+}
+.post:nth-child(2) {
+    margin: 20px;
+}
+.post figure {
+    width: 100%;
+    height: 250px;
+    border-radius: 30px;
+    overflow: hidden;
+    margin: 20px 0;
+}
+.post figure img {
+    width: 100%;
+}
+
+
+.post h3, .post p {
+    font-family: 'poppins', sans-serif;
+}
+.post h3 {
+    font-size: 18px;
+    font-weight: normal;
+}
+.post p {
+    font-size: 14px;
+}
+.post p span {
+    font-weight: bold;
+}
+
+
+/* footer */
+footer {
+    margin-top: 30px;
+    background-color: #292929;
+    color: white;
+}
+
+#subscribe {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+}
+.texto {
+    margin: 50px 0;
+    width: 50%;
+}
+.texto h3 {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: 'poppins', sans-serif;
+}
+.texto p {
+    font-family: 'poppins', sans-serif;
+    font-size: 18px;
+}
+
+.input {
+    display: flex;
+    width: 40%;
+    border: 5px solid white;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.input input {
+    width: 100%;
+    padding: 15px;
+    border: none;
+}
+.input button {
+    position: relative;
+    background-color: #292929;
+    color: white;
+    font-family: 'poppins', sans-serif;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+}
+
+
+/* assinatura */
+#assinatura {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+#assinatura div h4 {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+#assinatura div p {
+    font-family: 'poppins', sans-serif;
+    font-size: 14px;
+}
+
+#assinatura .links a {
+    margin-left: 30px;
+    text-decoration: none;
+    color: white;
+    font-family: 'poppins', sans-serif;
+    font-size: 14px;
 }

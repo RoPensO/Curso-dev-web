@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    font-family: 'Koulen', cursive;
+}
+
+html {
+    background-color: black;
+    max-width: 1300px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+    
+header {
+    background-color: white;
+    border-radius: 50px;
+    position: sticky;
+}
+.menu {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+.logo {
+    font-size: 35px;
+}
+.logo span {
+    color: #ff4500;
+}
+.menu nav a {
+    text-decoration: none;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: capitalize;
+    margin-left: 20px;
+}
+.menu nav a:hover {
+    padding-top: 10px;
+    color: orangered;
+    border-top: 3px solid black;
+}
+
+
+main {
+    background-color: #fff;
+    border-radius: 35px;
+    padding: 20px 40px;
+}
+
+.titulo-topo {
+    display: flex;
+    width: 100%;
+    border-bottom: 3px solid black;
+    margin-bottom: 10px;
+}
+.titulo-topo h2 {
+    font-size: 35px;
+}
+
+.titulo-destaque {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 350px;
+}
+
+.titulo-destaque > .esq {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.esq h1 {
+    font-size: 120px;
+    line-height: 110px;
+    letter-spacing: 2px;
+}
+.titulo-destaque > .esq {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.esq > .linha {
+    display: flex;
+}
+.esq > .linha figure {
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    border: 2px dashed orangered;
+    border-radius: 30px;
+    position: relative;
+    left: 50px;
+}
+.esq > .linha p {
+    width: 300px;
+    position: relative;
+    left: 50px;
+    top: 10px;
+    font-size: 18px;
+    line-height: 30px;
+}
+.titulo-destaque > .esq figure img {
+    height: 100%;
+}
+
+
+.titulo-destaque > .dir {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-between;
+    
+    padding: 25px 0;
+}
+.dir figure {
+    height: 100px;
+}
+.dir figure img {
+    height: 100%;
+    transform: rotate(90deg);
+}
+.dir button {
+    margin: none;
+    padding: 20px 60px;
+    color: white;
+    background-color: orangered;
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+    letter-spacing: 5px;
+    cursor: pointer;
+}
+
+.fotos {
+    display: flex;
+    justify-content: space-between;
+}
+.esq-foto {
+    width: 40%;
+}
+.esq-foto {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.dir-foto {
+    width: 60%;
+}
+.fotos img {
+    width: 300px;
+}
