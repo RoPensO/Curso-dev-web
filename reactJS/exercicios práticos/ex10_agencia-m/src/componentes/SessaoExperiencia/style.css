@@ -1,0 +1,57 @@
+.experiencias {
+    padding: 100px 20px;
+}
+
+.experiencias-claro {
+    background-color: #f6f8fc;
+    color: #32333c;
+}
+.experiencias-escuro {
+    background-color: #393838;
+    color: #CCCCCC;
+}
+
+.titulo {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+}
+
+.titulo h2 {
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo h2::after {
+    margin: 20px auto;
+    display: flex;
+    content: '';
+    height: 10px;
+    width: 150px;
+    background-color: #feb633;
+}
+
+.titulo p {
+    font-size: 15px;
+}
+
+
+.box-cards {
+    width: 80%;
+    display: flex;
+    margin: 50px auto;
+}
+
+@media (max-width: 1024px) {
+    .box-cards {
+        flex-direction: column;
+    }
+}
+@media (max-width: 425px) {
+    .box-cards {
+        width: 100%;
+    }
+}

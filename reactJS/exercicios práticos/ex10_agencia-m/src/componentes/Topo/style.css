@@ -1,0 +1,37 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: auto;
+    position: sticky;
+    top: 0;
+}
+
+header img {
+    height: 35px;
+    padding: 5px;
+}
+
+button {
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 2px solid #747272;
+    background-color: transparent;
+}
+
+button img {
+    height: 100%;
+}
+
+.bannerClaro {
+    background-color: #fff;
+}
+.bannerEscuro {
+    background-color: #252525;
+    border-bottom: 1px solid #ffffff0d;
+}
+.bannerEscuro button {
+    border: 2px solid white;
+}

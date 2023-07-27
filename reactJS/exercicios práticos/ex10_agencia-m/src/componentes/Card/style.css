@@ -1,0 +1,36 @@
+.card {
+    border: 1px solid darkgray;
+    margin: 0 20px;
+    padding: 30px 20px;
+    width: calc(100%/3);
+    border-radius: 10px;
+}
+
+
+.card:hover {
+    border: 1px solid #edecec;
+    background: #feb633;
+    cursor: pointer;
+    transition: all 1s;
+    color: rgb(54, 54, 54);
+}
+
+.card h2 {
+    font-size: 25px;
+}
+
+.card p {
+    font-size: 16px;
+}
+.card p:nth-child(3) {
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+    .card {
+        width: 100%;
+        border-radius: 0;
+        margin: 10px 0 ;
+    }
+}

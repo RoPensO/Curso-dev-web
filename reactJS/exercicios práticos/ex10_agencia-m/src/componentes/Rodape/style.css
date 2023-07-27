@@ -1,0 +1,37 @@
+footer {
+    text-align: center;
+    padding: 50px 0 1px;
+    margin: auto;
+}
+.rodape-claro {
+    background-color: #fff;
+}
+.rodape-escuro {
+    background-color: #252525;
+}
+.rodape-escuro .assinatura {
+    border-top: 1px solid white;
+}
+
+footer p {
+    margin: 10px auto;
+    max-width: 500px;
+    color: #8a8fa3;
+}
+.social {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.social img {
+    height: 50px;
+    margin: 10px;
+}
+
+footer .assinatura {
+    width: 100%;
+}
+
+footer p span {
+    color: orange;
+}
