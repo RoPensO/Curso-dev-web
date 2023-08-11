@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --fundo: #000;
+    --cinza-escuro: #1f1f1f;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html {
+    max-width: 1440px;
+    background-color: var(--fundo);
+    color: white;
+    margin: auto;
+}
+
+button {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+}
+
+header, footer {
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo span {
+    font-size: 25px;
+}
+
+.logo img {
+    height: 40px;
+    padding: 5px;
+    filter: invert(1);
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    margin-right: 15px;
+}
+nav button {
+    background-color: #fff;
+    font-weight: bold;
+}
+
+
+.banner {
+    height: 500px;
+    margin: 0 20px;
+    padding: 30px;
+    background-color: #fff;
+    color: black;
+    border-radius: 20px;   
+    display: flex;
+    overflow: hidden;
+    margin: 30px 0;
+}
+
+.text {
+    padding-left: 50px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.text h1 {
+    width: 80%;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 60px;
+}
+.text span {
+    font-weight: bold;
+}
+.text p {
+    width: 70%;
+    margin: 30px 0 60px;
+}
+
+.btn-apps {
+    display: flex;
+}
+.btn-apps button {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    color: white;
+    font-weight: bold;
+    background-color: var(--fundo);
+}
+.btn-apps button img {
+    height: 30px;
+    filter: invert(1);
+    margin-right: 3px;
+    padding: 5px;
+}
+
+
+.imgs {
+    transform: scale(2) rotate(-5deg);
+    position: relative;
+    top: 230px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.imgs img:nth-child(2) {
+    transform: rotate(15deg);
+    position: relative;
+    right: 70px;
+    top: 30px;
+}
+
+.what-is {
+    padding: 80px 30px;
+}
+
+.title {
+    margin: auto;
+}
+.title h2, .title > p {
+    margin: auto;
+    text-align: center;
+    width: 55%;
+}
+
+.title h2 {
+    font-size: 40px;
+    font-weight: 300;
+}
+.title h2 span {
+    font-weight: bold;
+}
+
+.title p {
+    margin: 30px auto;
+    line-height: 30px;
+}
+
+.container-cards {
+    width: 1200px;
+    margin: auto;
+    margin-top: 80px;
+    display: flex;
+    padding: 0 20px;
+    gap: 20px;
+    text-align: center;
+}
+
+.card {
+    width: calc(100%/3);
+    background-color: var(--cinza-escuro);
+    border-radius: 20px;
+    padding: 20px;
+}
+.card img {
+    background-color: #b9b9b9;
+    padding: 10px;
+    height: 50px;
+    margin: 20px;
+    border-radius: 30px;
+}
+.card h3 {
+    font-size: 25px;
+}
+.card p  {
+    width: 90%;
+    font-size: 16px;
+}
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.3s ease;
+    background-color: #fff;
+    color: var(--cinza-escuro);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7)
+}
+
+
+
+.benenit-info {
+    max-width: 1024px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.benenit-info figure {
+    width: 40%;
+    height: 400px;
+    margin: 30px 50px;
+    overflow: hidden;
+    border-radius: 30px;
+    margin: 50px;
+    box-shadow: 0 0 5px grey;
+}
+
+.benenit-info figure img {
+    width: auto;
+    height: 100%;
+    object-fit: fill;
+    position: relative;
+    right: 100px;
+}
+
+.benenit-info > div {
+    width: 50%;
+}
+.benenit-info > div h2 {
+    font-weight: 400;
+    font-size: 35px;
+}
+.benenit-info > div span {
+    font-weight: bold;
+}
+.benenit-info > div p {
+    margin: 30px 0;
+    line-height: 30px;
+}
+.benenit-info > div button {
+    background-color: var(--fundo);
+    border: 1px solid white;
+    color: white;
+    font-weight: bold;
+}
+.benenit-info > div button:hover {
+    background-color: #fff;
+    color: var(--fundo);
+}
+
+
+.how-invest {
+    background-image: url(../assets/imagens/bg-apps.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -40px;
+    border-radius: 30px;
+    height: 200px;
+    max-width: 1200px;
+    padding: 100px;
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    color: var(--fundo);
+}
+
+.how-invest h2 {
+    width: 40%;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+
+
+.faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.faq h2 {
+    margin-top: 30px;
+}
+.container-faq {
+    width: 1000px;
+    margin: auto;
+}
+
+.container-faq ul {
+    padding: 30px 0;
+}
+
+.container-faq li {
+    list-style: none;
+    background-color: var(--cinza-escuro);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 20px;
+}
+
+.container-faq li label {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.container-faq li label::after {
+    content: "+";
+}
+
+.container-faq li input[type="radio"] {
+    display: none;
+}
+.container-faq li .content {
+    margin: 20px 0 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+.container-faq li input[type="radio"]:checked + label + .content {
+    max-height: 400px;
+    padding: 10px 20px 10pxs;
+}
+
+.container-faq li input[type="radio"]:checked + label::after {
+    content: "-";
+}
