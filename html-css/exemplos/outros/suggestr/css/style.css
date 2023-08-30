@@ -37,7 +37,7 @@ button {
     padding: 5px;
     box-shadow: 0 0 5px darkgray;
     border-radius: 50px;
-    width: 900px;
+    max-width: 900px;
     margin: 20px auto;
     display: flex;
     align-items: center;
@@ -355,7 +355,11 @@ hr {
 }
 
 .question-faq {
+    border-bottom: 1px solid rgba(206, 206, 206, 0.479);
     padding: 10px 0;
+}
+.question-faq:nth-child(5) {
+    border: none;
 }
 .question-faq label {
     font-size: 20px;
