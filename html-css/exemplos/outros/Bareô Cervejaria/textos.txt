@@ -36,13 +36,9 @@ Brasil
 HORARIO DE FUNCIONAMENTO
 
 Horário de funcionamento
-seg.:	Fechado
-ter.:	Fechado
-qua.:	17:00 – 22:00
-qui.:	17:00 – 22:00
-sex.:	17:00 – 22:00
-sáb.:	15:00 – 22:00
-dom.:	15:00 – 20:00
+Quarta a sexta-feira das 17h às 22h;
+Sábado das 15h às 22h;
+Domingo das 15h às 20h.
 
 
 

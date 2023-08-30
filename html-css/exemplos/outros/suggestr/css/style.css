@@ -22,7 +22,14 @@ a {
 }
 
 button {
+    padding: 15px 25px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
     cursor: pointer;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: 500;
 }
 
 /* HEADER */
@@ -61,14 +68,6 @@ button {
 }
 .menu button {
     background-color: rgb(216, 216, 216);
-    padding: 15px;
-    border-radius: 30px;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    text-transform: capitalize;
-    letter-spacing: 1px;
-    font-weight: 500;
 }
 
 
@@ -98,12 +97,7 @@ button {
 }
 
 .banner button {
-    padding: 10px 30px;
     background-color: white;
-    border-radius: 30px;
-    border: none;
-    font-weight: bold;
-    letter-spacing: 1px;
 }
 
 
@@ -131,11 +125,8 @@ button {
     margin: 10px 0 40px;
 }
 .info-esq button {
-    padding: 10px 20px;
     background-color: rgb(50, 98, 255);
     color: white;
-    border-radius: 30px;
-    border: none;
 }
 
 .info-dir {
@@ -397,14 +388,84 @@ hr {
     display: flex;
 }
 
+
+
 .info-plan {
-    width: 70%;
+    width: 60%;
+    padding: 30px;
 }
 
-.price-plan {
-    width: 30%;
-    background-color: #fdf2f2;
+.info-plan .titulo {
+    margin-bottom: 50px;
 }
+
+.info-plan .titulo h2 {
+    width: 80%;
+    font-size: 30px;
+}
+
+.info-plan .titulo p {
+    margin-top: 10px;
+    width: 80%;
+}
+
+.info-plan h3 {
+    margin: 20px 0;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+ul li {
+    list-style: none;
+    width: 50%;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+ul li::before {
+    content: '🗸';
+    color: #e73544;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-right: 10px;
+    position: relative;
+    top: 3px;
+}
+
+
+.price-plan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    background-color: rgb(245, 238, 230);
+}
+.price-plan > p {
+    font-size: 22px;
+}
+
+.price {
+    margin: -10px;
+    display: flex;
+    align-items: center;
+}
+.price h1 {
+    color: rgb(231, 53, 68);
+    font-size: 80px;
+}
+.price span {
+    color: rgb(231, 53, 68);
+    font-weight: bold;
+}
+
+.price-plan button {
+    color: white;
+    background-color: rgb(231, 53, 68);
+    margin-top: 30px;
+}
+
 
 
 
