@@ -37,7 +37,7 @@ button {
     padding: 5px;
     box-shadow: 0 0 5px darkgray;
     border-radius: 50px;
-    max-width: 900px;
+    width: 900px;
     margin: 20px auto;
     display: flex;
     align-items: center;
@@ -349,12 +349,14 @@ hr {
 }
 
 .box-faq {
-    background-color: aqua;
-    /* background-color: #fdf2f2; */
-    padding: 30px;
+    background-color: #fdf2f2;
+    padding: 10px 30px;
     border-radius: 30px;
 }
 
+.question-faq {
+    padding: 10px 0;
+}
 .question-faq label {
     font-size: 20px;
     font-weight: bold;
@@ -365,11 +367,29 @@ hr {
 }
 .question-faq label::after {
     content: '+';
+    font-size: 25px;
+    transition: 0.2s ease-in-out;
 }
 .content {
     font-size: 14px;
 }
 
+.question-faq input[type="checkbox"] {
+    display: none;
+}
+
+.question-faq .content {
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+
+.question-faq input[type="checkbox"]:checked + label + .content {
+    max-height: 150px;
+}
+.question-faq input[type="checkbox"]:checked + label::after {
+    rotate: 45deg;
+}
 
 /* PLAN */
 .container-plan {
