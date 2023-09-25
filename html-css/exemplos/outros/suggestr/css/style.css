@@ -2,6 +2,7 @@
 
 :root {
     --cinza: rgb(121, 121, 121);
+    --amarelado: rgb(255,255,250);
 }
 
 
@@ -19,6 +20,7 @@ html {
 
 a {
     text-decoration: none;
+    transition: 0.2s;
 }
 
 button {
@@ -87,7 +89,8 @@ button {
 }
 
 .banner h1 {
-    width: 900px;
+    padding: 0 20px;
+    max-width: 900px;
     font-size: 70px;
     line-height: 80px;
 }
@@ -121,7 +124,7 @@ button {
 }
 .info-esq h2 {
     font-size: 25px;
-    width: 400px;
+    max-width: 400px;
     margin: 10px 0 40px;
 }
 .info-esq button {
@@ -247,7 +250,7 @@ hr {
 }
 
 .info-starter {
-    background-color: rgb(255, 255, 250);
+    background-color: var(--amarelado);
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -255,7 +258,7 @@ hr {
 }
 
 .info-starter h3 {
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .info-starter h3, .box-starter p {
@@ -292,7 +295,7 @@ hr {
 }
 .testemonial {
     color: white;
-    overflow: hidden;
+    overflow-x: scroll;
     padding: 50px;
 }
 .box-temimonial:nth-child(2) {
@@ -337,7 +340,7 @@ hr {
 
 /* FAQ */
 .container-faq {
-    width: 700px;
+    max-width: 700px;
     margin: 100px auto;
 }
 .faq {
@@ -349,7 +352,7 @@ hr {
 }
 
 .box-faq {
-    background-color: #fdf2f2;
+    background-color: var(--amarelado);
     padding: 10px 30px;
     border-radius: 30px;
 }
@@ -576,4 +579,89 @@ footer {
 }
 .social img {
     filter: invert(1);
+}
+
+
+@media(max-width: 1024px) {
+    .cards-machine-learning .text h2 {
+        padding-right: 0;
+    }
+
+    .box-cards .card p {
+        font-size: 16px;
+        width: 100%;
+    }
+}
+
+@media(max-width: 768px) {
+    .menu {
+        margin: 20px 10px;
+        padding: 20px;
+    }
+    .menu button {
+        display: none;
+    }
+    .banner h1 {
+        font-size: 50px;
+        line-height: 70px;
+    }
+    .title h1 {
+        font-size: 60px
+    }
+    .cards-machine-learning {
+        flex-direction: column;
+    }
+    .cards-machine-learning .text, .cards-machine-learning .box-cards {
+        width: 100%;
+    }
+    .box-cards .card {
+        height: 200px;
+    }
+    .cards-machine-learning, .starter, .testemonial {
+        margin: 30px 20px;
+    }
+    .starter {
+        flex-direction: column;
+    }
+    .starter figure, .starter .info-starter {
+        width: 100%;
+    }
+    .starter figure {
+        height: 250px;
+    }
+    .starter figure img {
+        width: 100%;
+        height: auto;
+        position: relative;
+        bottom: 100px;
+    }
+    .starter .info-starter {
+        height: auto;
+        margin: 30px 0;
+    }
+    .box-faq {
+        margin: 0 20px;
+    }
+    .container-plan {
+        padding: 50px;
+    }
+    .container-info {
+        margin: 100px 20px;
+    }
+    .info-plan .titulo h2, .info-plan .titulo p {
+        width: 80%;
+        margin: auto;
+        text-align: center;
+    }
+    .box-plan {
+        flex-direction: column;
+        border-radius: 20px;
+    }
+    .info-plan, .price-plan {
+        width: 100%;
+    }
+    .price-plan {
+        padding: 30px 0;
+    }
+    
 }
