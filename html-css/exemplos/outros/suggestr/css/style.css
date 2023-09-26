@@ -164,7 +164,8 @@ hr {
     font-size: 20px;
     margin: auto;
     color: var(--cinza);
-    width: 500px;
+    max-width: 500px;
+    padding: 20px;
 }
 .title p:nth-child(3) {
     font-size: 18px;
@@ -348,7 +349,7 @@ hr {
 }
 .faq h1 {
     font-size: 70px;
-    width: 700px;
+    max-width: 700px;
 }
 
 .box-faq {
@@ -376,6 +377,8 @@ hr {
     content: '+';
     font-size: 25px;
     transition: 0.2s ease-in-out;
+    display: flex;
+    align-items: center;
 }
 .content {
     font-size: 14px;
@@ -548,6 +551,9 @@ footer {
 .bloco {
     width: calc(100% /4);
 }
+.end > p {
+    width: 100%;
+}
 
 .footer-menu, .footer-menu nav, .footer-links, .footer-links nav {
     display: flex;
@@ -664,4 +670,105 @@ footer {
         padding: 30px 0;
     }
     
+}
+
+@media(max-width: 425px) {
+    .menu {
+        flex-direction: column;
+    }
+    .menu nav {
+        display: none;
+    }
+
+    .banner {
+        height: auto;
+        padding: 20px;
+    }
+    .banner h1 {
+        font-size: 40px;
+    }
+    .banner p {
+        padding: 0 20px;
+    }
+
+    .container-info {
+        padding: 20px;
+        margin-bottom: 10px;
+    }
+    .infos {
+        flex-direction: column;
+    }
+    .info-dir, .info-esq {
+        width: 100%;
+        text-align: center;
+    }
+    .info-esq {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .info-dir {
+        padding: 20px;
+    }
+
+    .container-supercharge {
+        width: 100%;
+    }
+
+    .cards-machine-learning .text {
+        padding: 10px;
+        text-align: center;
+    }
+    .box-cards {
+        columns: 1;
+        padding: 0;
+    }
+    .box-cards > .card {
+        margin-bottom: 0;
+        margin-top: 20px;
+    }
+
+    .starter figure img {
+        bottom: 0;
+    }
+
+    .box-faq {
+        padding: 10px;
+    }
+
+    .container-plan {
+        padding: 20px;
+    }
+
+    .info-plan {
+        padding: 20px;
+    }
+    .info-plan h3 {
+        text-align: center;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .bloco {
+        width: 100%;
+    }
+
+    .bloco nav {
+        display: none;
+    }
+
+    .end > p {
+        margin-bottom: 50px ;
+    }
+
+    .assinatura {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .assinatura > p {
+        left: 0;
+        margin: 30px 0;
+    }
 }
