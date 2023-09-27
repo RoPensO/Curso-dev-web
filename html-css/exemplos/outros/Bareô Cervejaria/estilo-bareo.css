@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap');
+
+:root {
+    --amarelo-claro-bareo: #F1E8D9;
+    --amarelo-principal-bareo: #C69861;
+    --marron-bareo: #3D1702;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+#banner {
+    height: 70vh;
+    background-image: url(assets/galeria/banner-frente.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -500px;
+}
+header {
+    max-width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo {
+    height: 50px;
+}
+.logo img {
+    height: 100%;
+}
+header nav a {
+    margin-left: 10px;
+    text-transform: uppercase;
+    color: white;
+}
+header nav a:hover {
+    transition: 0.2s;
+    color: var(--amarelo-principal-bareo);
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+}
+.banner h1 {
+    font-size: 120px;
+}
+.banner hr {
+    width: 500px;
+    height: 5px;
+    background: var(--amarelo-principal-bareo);
+    border: none;
+    border-radius: 10px;
+    margin: -20px 0 10px;
+}
+.banner p {
+    font-size: 30px;
+}
+
+
+#quemsomos {
+    display: flex;
+    align-items: center;
+    height: 70vh;
+    background-color: var(--amarelo-claro-bareo);
+}
+
+.desc-quemsomos, .image-quemsomos {
+    width: calc(100% / 2);
+}
+
+.desc-quemsomos {
+    padding: 50px 100px;
+}
+.desc-quemsomos h2 {
+    text-transform: uppercase;
+    font-size: 35px;
+    margin-bottom: 20px;
+}
+
+.image-quemsomos {
+    display: flex;
+    justify-content: center;
+}
+.image-quemsomos figure{
+    height: 300px;
+    width: 500px;
+    overflow: hidden;
+    border-radius: 30px;
+}
+.image-quemsomos figure img {
+    width: 100%;
+}
+
+
+#ambiente {
+    padding: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
