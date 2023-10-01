@@ -110,8 +110,33 @@ header nav a:hover {
 
 
 #ambiente {
-    padding: 100px;
+    max-width: 1024px;
+    margin: auto;
+    padding: 30px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     text-align: center;
 }
+
+#ambiente > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#ambiente > div > figure {
+    height: 60px;
+    margin: 20px;
+}
+#ambiente > div > figure img {
+    height: 100%;
+}
+
+#ambiente > div h3 {
+    font-size: 22px;
+    text-transform: uppercase;
+}
+#ambiente > div p {
+    max-width: 200px;
+}
+
+
