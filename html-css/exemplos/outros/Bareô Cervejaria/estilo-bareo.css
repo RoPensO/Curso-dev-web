@@ -148,3 +148,112 @@ header nav a:hover {
     display: flex;
 }
 
+
+
+#horario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('./assets/galeria/banner-bar-cheio.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -350px;
+    padding: 50px;
+    text-transform: uppercase;
+    color: white;
+}
+#horario h2 {
+    font-size: 32px;
+}
+.box-horarios {
+    background-color: var(--marron-bareo);
+    border: 5px solid white;
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+.box-horarios p {
+    transition: 0.5s ease;
+    margin: 10px;
+    cursor: default;
+}
+.box-horarios p:hover {
+    color: var(--amarelo-principal-bareo);
+}
+
+#depoimentos {
+    margin: auto;
+    padding: 50px;
+}
+#depoimentos h2 {
+    text-align: center;
+    font-size: 32px;
+}
+.box-depoimentos {
+    display: flex;
+    margin: 80px;
+}
+
+.card {
+    margin: 10px;
+    background-color: var(--amarelo-principal-bareo);
+    padding: 30px;
+    width: calc(100%/3);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 20px;
+    cursor: default;
+    transition: 0.7s ease-out;
+}
+.card:hover {
+    background-color: var(--marron-bareo);
+    color: white;
+}
+.card span {
+    margin-top: 20px;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+
+#contato {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.rodape {
+    height: 350px;
+    background: linear-gradient(90deg, transparent, var(--marron-bareo), var(--marron-bareo));
+    z-index: 1;
+    color: var(--amarelo-principal-bareo);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: end;
+    padding: 50px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: end;
+}
+
+.social-media {
+    display: flex;
+}
+.social-media a {
+    margin-left: 10px;
+}
+.social-media figure {
+    background-color: var(--amarelo-principal-bareo);
+    height: 35px;
+    width: 35px;
+    border-radius: 10px;
+}
+.social-media figure img {
+    height: 100%;
+    padding: 7px;
+}
